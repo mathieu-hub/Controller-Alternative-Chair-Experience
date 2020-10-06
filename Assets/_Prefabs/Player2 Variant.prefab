@@ -12,6 +12,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player2
       objectReference: {fileID: 0}
+    - target: {fileID: 2986528879468248207, guid: 523bed63ff7e65d4ab5dafc3a8d30041,
+        type: 3}
+      propertyPath: m_Layer
+      value: 12
+      objectReference: {fileID: 0}
     - target: {fileID: 3284290449518103187, guid: 523bed63ff7e65d4ab5dafc3a8d30041,
         type: 3}
       propertyPath: vuforiaPlayerRef
@@ -76,6 +81,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7338705383381128594, guid: 523bed63ff7e65d4ab5dafc3a8d30041,
+        type: 3}
+      propertyPath: m_Layer
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 7454225834968051842, guid: 523bed63ff7e65d4ab5dafc3a8d30041,
         type: 3}
