@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class PScripts : MonoBehaviour
 {
+    public int playerNumber;
+
     public SpriteRenderer sr;
 
     public Movement movement;
