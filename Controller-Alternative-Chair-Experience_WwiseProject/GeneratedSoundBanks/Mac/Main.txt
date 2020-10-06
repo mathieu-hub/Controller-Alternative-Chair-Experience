@@ -1,0 +1,6 @@
+Event	ID	Name			Wwise Object Path	Notes
+	1351382450	Play_Explosion_Fusee			\Default Work Unit\Play_Explosion_Fusee	
+
+In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	730268299	Explosion fusée	C:\Users\theov\Desktop\Rubika\Année 3\Projet CTRL Alt\Controller-Alternative-Chair-Experience\Controller-Alternative-Chair-Experience_WwiseProject\.cache\Mac\SFX\Explosion fusée_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Explosion fusée		505240
+

@@ -1,6 +1,31 @@
 <?xml version="1.0" encoding="utf-8"?>
 <WwiseDocument Type="WorkUnit" ID="{26210975-1902-49CC-99EA-CCBAE576F01F}" SchemaVersion="97">
 	<AudioObjects>
-		<WorkUnit Name="Default Work Unit" ID="{26210975-1902-49CC-99EA-CCBAE576F01F}" PersistMode="Standalone"/>
+		<WorkUnit Name="Default Work Unit" ID="{26210975-1902-49CC-99EA-CCBAE576F01F}" PersistMode="Standalone">
+			<ChildrenList>
+				<Sound Name="Explosion fusée" ID="{C5DDC776-514C-44D8-91C1-FD511E3F9607}" ShortID="33157720">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0730BCD2-FD4C-4C47-9A4F-F87DEAF13A83}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EAB80688-E4E7-4E73-9D7E-8AC04DA89FC2}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Explosion fusée" ID="{DBBC573E-481B-45E4-B4A5-41061812BDE6}">
+							<Language>SFX</Language>
+							<AudioFile>Explosion fusée.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="730268299"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="Explosion fusée" ID="{DBBC573E-481B-45E4-B4A5-41061812BDE6}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+			</ChildrenList>
+		</WorkUnit>
 	</AudioObjects>
 </WwiseDocument>

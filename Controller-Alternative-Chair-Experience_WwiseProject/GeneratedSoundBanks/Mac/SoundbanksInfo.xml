@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Mac" BasePlatform="Mac" SchemaVersion="12" SoundbankVersion="135">
+	<RootPaths>
+		<ProjectRoot>C:\Users\theov\Desktop\Rubika\Année 3\Projet CTRL Alt\Controller-Alternative-Chair-Experience\Controller-Alternative-Chair-Experience_WwiseProject\</ProjectRoot>
+		<SourceFilesRoot>C:\Users\theov\Desktop\Rubika\Année 3\Projet CTRL Alt\Controller-Alternative-Chair-Experience\Controller-Alternative-Chair-Experience_WwiseProject\.cache\Mac\</SourceFilesRoot>
+		<SoundBanksRoot>C:\Users\theov\Desktop\Rubika\Année 3\Projet CTRL Alt\Controller-Alternative-Chair-Experience\Controller-Alternative-Chair-Experience_WwiseProject\GeneratedSoundBanks\Mac\</SoundBanksRoot>
+		<ExternalSourcesInputFile></ExternalSourcesInputFile>
+		<ExternalSourcesOutputRoot>C:\Users\theov\Desktop\Rubika\Année 3\Projet CTRL Alt\Controller-Alternative-Chair-Experience\Controller-Alternative-Chair-Experience_WwiseProject\GeneratedSoundBanks\Mac</ExternalSourcesOutputRoot>
+	</RootPaths>
+	<DialogueEvents/>
+	<StreamedFiles/>
+	<MediaFilesNotInAnyBank/>
+	<SoundBanks>
+		<SoundBank Id="1355168291" Language="SFX" Hash="2953616821">
+			<ObjectPath>Init</ObjectPath>
+			<ShortName>Init</ShortName>
+			<Path>Init.bnk</Path>
+		</SoundBank>
+		<SoundBank Id="3161908922" Language="SFX" Hash="3512620673">
+			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
+			<ShortName>Main</ShortName>
+			<Path>Main.bnk</Path>
+			<IncludedEvents>
+				<Event Id="1351382450" Name="Play_Explosion_Fusee" ObjectPath="\Events\Default Work Unit\Play_Explosion_Fusee" DurationType="OneShot" DurationMin="2.631125" DurationMax="2.631125">
+					<IncludedMemoryFiles>
+						<File Id="730268299" Language="SFX">
+							<ShortName>Explosion fusée.wav</ShortName>
+							<Path>SFX\Explosion fusée_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+			</IncludedEvents>
+		</SoundBank>
+	</SoundBanks>
+</SoundBanksInfo>
