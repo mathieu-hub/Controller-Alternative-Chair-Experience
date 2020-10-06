@@ -96,6 +96,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 27faae4d0ddd9d14ea545f903da0af1e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerNumber: 1
   sr: {fileID: 7454225834968051842}
   movement: {fileID: 3284290449518103187}
 --- !u!114 &3284290449518103187
@@ -110,7 +111,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a296fea345734dc40b1c19cbff77d687, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  vuforiaPlayerRef: {fileID: 0}
+  pScripts: {fileID: 5846787675843139678}
 --- !u!1 &7338705383381128594
 GameObject:
   m_ObjectHideFlags: 0
