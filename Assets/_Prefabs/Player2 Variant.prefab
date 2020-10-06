@@ -17,25 +17,30 @@ PrefabInstance:
       propertyPath: vuforiaPlayerRef
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 5846787675843139678, guid: 523bed63ff7e65d4ab5dafc3a8d30041,
+        type: 3}
+      propertyPath: playerNumber
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 6062883940911956633, guid: 523bed63ff7e65d4ab5dafc3a8d30041,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 1.89
       objectReference: {fileID: 0}
     - target: {fileID: 6062883940911956633, guid: 523bed63ff7e65d4ab5dafc3a8d30041,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 6062883940911956633, guid: 523bed63ff7e65d4ab5dafc3a8d30041,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 0.14
       objectReference: {fileID: 0}
     - target: {fileID: 6062883940911956633, guid: 523bed63ff7e65d4ab5dafc3a8d30041,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0
+      value: 0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: 6062883940911956633, guid: 523bed63ff7e65d4ab5dafc3a8d30041,
         type: 3}
@@ -50,7 +55,7 @@ PrefabInstance:
     - target: {fileID: 6062883940911956633, guid: 523bed63ff7e65d4ab5dafc3a8d30041,
         type: 3}
       propertyPath: m_LocalRotation.w
-      value: 1
+      value: 0.7071068
       objectReference: {fileID: 0}
     - target: {fileID: 6062883940911956633, guid: 523bed63ff7e65d4ab5dafc3a8d30041,
         type: 3}
