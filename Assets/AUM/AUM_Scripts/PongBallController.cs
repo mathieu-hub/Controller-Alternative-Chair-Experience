@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PongBallController : MonoBehaviour
 {
-    public Rigidbody rb;
+    public Rigidbody2D rb;
 
     public int playerNumberTarget;
 
@@ -41,15 +41,15 @@ public class PongBallController : MonoBehaviour
         
     }
 
-    private void OnCollisionEnter(Collision collision)
+    private void OnCollisionEnter2D(Collision2D collision)
     {
-        if(collision.transform.tag == "ShieldPong")
+        if (collision.transform.tag == "ShieldPong")
         {
-            rb.velocity = (  ( (transform.position - playerTarget.position).normalized * 1f ) + ( (transform.position - playerTarget.GetChild(0).position).normalized * 1f )  ).normalized * speedImpulse;
+            rb.velocity = (((transform.position - playerTarget.position).normalized * 1f) + ((transform.position - playerTarget.GetChild(0).position).normalized * 1f)).normalized * speedImpulse;
 
             nonPlayerTarget = playerTarget;
 
-            if(playerNumberTarget == 1)
+            if (playerNumberTarget == 1)
             {
                 playerNumberTarget = 2;
 
@@ -65,7 +65,7 @@ public class PongBallController : MonoBehaviour
 
             playerTarget = GameObject.Find("Player" + playerNumberTarget).transform;
 
-            
+
             if (speedImpulse < speedImpulseLimit)
                 speedImpulse += 1f;
 
