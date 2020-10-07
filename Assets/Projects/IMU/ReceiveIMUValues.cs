@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using Uduino;
+using System.Globalization;
 
 public class ReceiveIMUValues : MonoBehaviour {
 
@@ -21,10 +22,10 @@ public class ReceiveIMUValues : MonoBehaviour {
         string[] values = data.Split('/');
         if (values.Length == 5 && values[0] == imuName) // Rotation of the first one 
         {
-            float w = float.Parse(values[1]);
-            float x = float.Parse(values[2]);
-            float y = float.Parse(values[3]);
-            float z = float.Parse(values[4]);
+            float w = float.Parse(values[1], CultureInfo.InvariantCulture);
+            float x = float.Parse(values[2], CultureInfo.InvariantCulture);
+            float y = float.Parse(values[3], CultureInfo.InvariantCulture);
+            float z = float.Parse(values[4], CultureInfo.InvariantCulture);
             this.transform.localRotation = Quaternion.Lerp(this.transform.localRotation,  new Quaternion(w, y, x, z), Time.deltaTime * speedFactor);
         } else if (values.Length != 5)
         {
