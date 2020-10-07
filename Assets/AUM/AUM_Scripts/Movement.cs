@@ -20,6 +20,6 @@ public class Movement : MonoBehaviour
 
         float zRotation = vuforiaPlayerRef.rotation.eulerAngles.z;
 
-        transform.localRotation = Quaternion.Euler(90f, 0f, zRotation);
+        transform.localRotation = Quaternion.Euler(0f, 0f, zRotation);
     }
 }
