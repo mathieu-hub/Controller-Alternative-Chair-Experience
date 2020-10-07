@@ -73,6 +73,10 @@ public class PongBallController : MonoBehaviour
                 speedAttraction += 1f;
 
         }
+        else if(collision.transform.tag == "Player")
+        {
+
+        }
     }
 
     // Update is called once per frame
