@@ -6,19 +6,23 @@ public class PongBallController : MonoBehaviour
 {
     public Rigidbody2D rb;
 
+    public Animator animator;
+
     public int playerNumberTarget;
 
     Transform playerTarget;
     Transform nonPlayerTarget;
 
     public float speedImpulse;
-
-    public float speedImpulseMultiplier;
+    float baseSpeedImpulse;
 
     public float speedAttraction;
+    float baseSpeedAttraction;
 
     public float speedImpulseLimit;
     public float speedAttractionLimit;
+
+    bool stopped;
 
     // Start is called before the first frame update
     void Start()
@@ -26,6 +30,9 @@ public class PongBallController : MonoBehaviour
         //Invoke("LancerBall", 3f);
 
         //rb.AddForce(Vector3.up);
+
+        baseSpeedImpulse = speedImpulse;
+        baseSpeedAttraction = speedAttraction;
 
         playerTarget = GameObject.Find("Player" + playerNumberTarget).transform;
 
@@ -66,27 +73,52 @@ public class PongBallController : MonoBehaviour
             playerTarget = GameObject.Find("Player" + playerNumberTarget).transform;
 
 
-            if (speedImpulse < speedImpulseLimit)
-                speedImpulse += 1f;
+            if (speedImpulse * 1.5f < speedImpulseLimit)
+                speedImpulse *= 1.5f;
+            else
+                speedImpulse = speedImpulseLimit;
 
-            if (speedAttraction < speedAttractionLimit)
-                speedAttraction += 1f;
+            if (speedAttraction * 1.5f < speedAttractionLimit)
+                speedAttraction *= 1.5f;
+            else
+                speedAttraction = speedAttractionLimit;
 
         }
         else if(collision.transform.tag == "Player")
         {
+            PongManager.pm.UpdateScores(collision.gameObject.GetComponent<PScripts>().playerNumber);
 
+            rb.velocity = Vector2.zero;
+
+            stopped = true;
+
+            animator.SetTrigger("Reset");
         }
     }
 
     // Update is called once per frame
     void Update()
     {
-        rb.AddForce( ( (playerTarget.position - transform.position).normalized  * speedAttraction) * Mathf.Max(1, 1 / (Vector3.Distance(playerTarget.position, transform.position)) / 5f) );
+        if(stopped == false)
+            rb.AddForce( ( (playerTarget.position - transform.position).normalized  * speedAttraction) * Mathf.Max(1, 1 / (Vector3.Distance(playerTarget.position, transform.position)) / 5f) );
     }
 
-    void LancerBall()
+    public void ResetBallStats()
     {
+        speedImpulse = baseSpeedImpulse;
 
+        speedAttraction = baseSpeedAttraction;
+    }
+
+    public void ResetPosition()
+    {
+        transform.position = Vector2.zero;
+
+        rb.velocity = Vector2.zero;
+    }
+
+    public void LaunchBall()
+    {
+        stopped = false;
     }
 }

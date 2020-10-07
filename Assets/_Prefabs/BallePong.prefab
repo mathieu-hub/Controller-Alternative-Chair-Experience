@@ -98,12 +98,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: 2777146684823067635}
+  animator: {fileID: 9133840573557040111}
   playerNumberTarget: 1
-  speedImpulse: 3
-  speedImpulseMultiplier: 0
-  speedAttraction: 0.7
-  speedImpulseLimit: 6
-  speedAttractionLimit: 3
+  speedImpulse: 2
+  speedAttraction: 0.3
+  speedImpulseLimit: 8.5
+  speedAttractionLimit: 3.5
 --- !u!50 &2777146684823067635
 Rigidbody2D:
   serializedVersion: 4
