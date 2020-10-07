@@ -28,8 +28,9 @@ public class ObjectDetection : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if (other.CompareTag("TargetableObject"))
+        if (other.CompareTag("Viseur"))
         {
+            Debug.Log("an object is target");
             gameObject.GetComponentInParent<TargetableObjects>().objectTargeted = gameObject;
             StartCoroutine(LoadBar());
         }        
