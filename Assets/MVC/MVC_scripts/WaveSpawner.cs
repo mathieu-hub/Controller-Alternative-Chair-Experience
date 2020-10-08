@@ -3,8 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
-using Management;
-using AudioManager;
+
 
 namespace Ennemies
 {
@@ -77,7 +76,6 @@ namespace Ennemies
             {
                 waveInProgress = false;
 
-                SingletonAudioSource.Instance.soundmanager.setValues(audioSource, 22);
                 audioSource.Play();
             }
 
@@ -85,7 +83,7 @@ namespace Ennemies
             {
                 
 
-                if (countdown <= 0f && Cinématique.lastBool)
+                if (countdown <= 0f)
                 {
                     ennemy01Here = 0;
                     ennemy02Here = 0;
@@ -111,7 +109,6 @@ namespace Ennemies
 
             WaveCompositor wave = waves[waveIndex];
 
-            GameManager.Instance.wavesBeforeSeller -= 1;
             waveIndex++;
             rounds++;
 
@@ -131,7 +128,6 @@ namespace Ennemies
             ennemySelector = Random.Range(0, 6);
             Debug.Log(ennemySelector);
 
-            SingletonAudioSource.Instance.soundmanager.setValues(audioSource, 20);
             audioSource.Play();
 
             if (ennemySelector == 0)
