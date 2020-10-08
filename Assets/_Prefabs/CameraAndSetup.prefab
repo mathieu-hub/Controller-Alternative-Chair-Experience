@@ -349,8 +349,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a1393a5833f23dc4fa018457c83b4eb0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  pongScore1: {fileID: 0}
-  pongScore2: {fileID: 0}
+  pongScore1: {fileID: 760080073227892248}
+  pongScore2: {fileID: 2595359511555224637}
+  doubleBallBonusPrefab: {fileID: 6412144009810564076, guid: b6237dc30683ec94293ffc95b88ea48f,
+    type: 3}
+  minDoubleBallCooldown: 10
+  maxDoubleBallCooldown: 15
 --- !u!1 &4798920091008322726
 GameObject:
   m_ObjectHideFlags: 0
@@ -692,6 +696,12 @@ RectTransform:
     type: 3}
   m_PrefabInstance: {fileID: 1451389926193263785}
   m_PrefabAsset: {fileID: 0}
+--- !u!95 &760080073227892248 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 2209024130266530481, guid: 597ab09d24d6abb40a589eb7b6434cf7,
+    type: 3}
+  m_PrefabInstance: {fileID: 1451389926193263785}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &4227919109391890060
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -814,6 +824,12 @@ PrefabInstance:
 --- !u!224 &8894850802182571900 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 4745753503980548592, guid: 597ab09d24d6abb40a589eb7b6434cf7,
+    type: 3}
+  m_PrefabInstance: {fileID: 4227919109391890060}
+  m_PrefabAsset: {fileID: 0}
+--- !u!95 &2595359511555224637 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 2209024130266530481, guid: 597ab09d24d6abb40a589eb7b6434cf7,
     type: 3}
   m_PrefabInstance: {fileID: 4227919109391890060}
   m_PrefabAsset: {fileID: 0}

@@ -8,21 +8,28 @@ public class PongBallController : MonoBehaviour
 
     public Animator animator;
 
+    public LineRenderer lr;
+
     public int playerNumberTarget;
 
     Transform playerTarget;
     Transform nonPlayerTarget;
 
     public float speedImpulse;
-    float baseSpeedImpulse;
+    [HideInInspector] public float baseSpeedImpulse;
 
     public float speedAttraction;
-    float baseSpeedAttraction;
+    [HideInInspector] public float baseSpeedAttraction;
 
     public float speedImpulseLimit;
     public float speedAttractionLimit;
 
     bool stopped;
+
+    public Gradient colorGradient1;
+    public Gradient colorGradient2;
+
+    public List<Animator> otherBallsAnimators;
 
     // Start is called before the first frame update
     void Start()
@@ -52,6 +59,8 @@ public class PongBallController : MonoBehaviour
     {
         if (collision.transform.tag == "ShieldPong")
         {
+            collision.gameObject.GetComponent<Animator>().SetTrigger("Bump");
+
             rb.velocity = (((transform.position - playerTarget.position).normalized * 1f) + ((transform.position - playerTarget.GetChild(0).position).normalized * 1f)).normalized * speedImpulse;
 
             nonPlayerTarget = playerTarget;
@@ -88,6 +97,16 @@ public class PongBallController : MonoBehaviour
         {
             PongManager.pm.UpdateScores(collision.gameObject.GetComponent<PScripts>().playerNumber);
 
+            GameObject[] bps = GameObject.FindGameObjectsWithTag("BallePong");
+
+            foreach(GameObject bp in bps)
+            {
+                if(bp.GetComponent<PongBallController>() != this)
+                {
+                    Destroy(bp);
+                }
+            }
+
             rb.velocity = Vector2.zero;
 
             stopped = true;
@@ -101,6 +120,23 @@ public class PongBallController : MonoBehaviour
     {
         if(stopped == false)
             rb.AddForce( ( (playerTarget.position - transform.position).normalized  * speedAttraction) * Mathf.Max(1, 1 / (Vector3.Distance(playerTarget.position, transform.position)) / 5f) );
+
+        lr.SetPosition(0, transform.position);
+
+        StartCoroutine(UpdateLineRendererPosition(transform.position));
+
+        if(stopped == false)
+            if (playerNumberTarget == 2)
+                lr.colorGradient = colorGradient1;
+            else
+                lr.colorGradient = colorGradient2;
+    }
+
+    IEnumerator UpdateLineRendererPosition(Vector2 position)
+    {
+        yield return new WaitForSeconds(0.1f);
+
+        lr.SetPosition(1, position);
     }
 
     public void ResetBallStats()
@@ -112,6 +148,8 @@ public class PongBallController : MonoBehaviour
 
     public void ResetPosition()
     {
+        lr.enabled = false;
+
         transform.position = Vector2.zero;
 
         rb.velocity = Vector2.zero;
@@ -119,6 +157,8 @@ public class PongBallController : MonoBehaviour
 
     public void LaunchBall()
     {
+        lr.enabled = true;
+
         stopped = false;
     }
 }
