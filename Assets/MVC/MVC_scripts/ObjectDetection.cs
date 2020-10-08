@@ -16,7 +16,7 @@ public class ObjectDetection : MonoBehaviour
 
     private void Update()
     {
-        if (gameObject.GetComponentInParent<TargetableObjects>().objectTargeted == gameObject.GetComponentInParent<TargetableObjects>().objectToTarget)
+        if (gameObject.GetComponentInParent<SimonGameManager>().objectTargeted == gameObject.GetComponentInParent<SimonGameManager>().objectToTarget)
         {
             resultBar = validationBar; 
         }
@@ -31,7 +31,7 @@ public class ObjectDetection : MonoBehaviour
         if (other.CompareTag("Viseur"))
         {
             Debug.Log("an object is target");
-            gameObject.GetComponentInParent<TargetableObjects>().objectTargeted = gameObject;
+            gameObject.GetComponentInParent<SimonGameManager>().objectTargeted = gameObject;
             StartCoroutine(LoadBar());
         }        
     }
