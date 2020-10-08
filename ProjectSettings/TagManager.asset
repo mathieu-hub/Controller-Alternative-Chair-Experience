@@ -6,6 +6,8 @@ TagManager:
   tags:
   - ShieldPong
   - BallePong
+  - TargetableObject
+  - Viseur
   layers:
   - Default
   - TransparentFX
