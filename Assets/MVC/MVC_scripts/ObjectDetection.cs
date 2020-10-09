@@ -10,7 +10,7 @@ public class ObjectDetection : MonoBehaviour
     [SerializeField] private GameObject resultBar;
     [SerializeField] private bool canTarget = true;
     [SerializeField] private bool isExit = false;
-
+    [SerializeField] private bool isStartButton;
 
     private void Start()
     {
@@ -26,6 +26,11 @@ public class ObjectDetection : MonoBehaviour
         else
         {
             resultBar = refuseBar;
+        }
+
+        if (isStartButton == true)
+        {
+
         }
     }
 
