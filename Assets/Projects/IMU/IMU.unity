@@ -1242,6 +1242,11 @@ PrefabInstance:
       propertyPath: baudRate
       value: 38400
       objectReference: {fileID: 0}
+    - target: {fileID: 114023058375386772, guid: bb5e6aea88a650f4a8317e74940b0ea4,
+        type: 3}
+      propertyPath: autoReconnect
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3948355414141522559, guid: bb5e6aea88a650f4a8317e74940b0ea4,
         type: 3}
       propertyPath: presentExtentionsMap.keys.Array.size
