@@ -900,21 +900,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0047637703558544eba8fb7c8b89dcfe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  manche:
+  round:
+  - colorSelection:
+    - {fileID: 0}
+    timeToComplete: 10
   - colorSelection:
     - {fileID: 0}
     - {fileID: 0}
-    - {fileID: 0}
-    - {fileID: 0}
     timeToComplete: 10
-  - colorSelection: []
-    timeToComplete: 0
-  - colorSelection: []
-    timeToComplete: 0
-  - colorSelection: []
-    timeToComplete: 0
-  - colorSelection: []
-    timeToComplete: 0
+  roundIndex: 0
 --- !u!1 &1534225141
 GameObject:
   m_ObjectHideFlags: 0
