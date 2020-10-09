@@ -139,6 +139,7 @@ MonoBehaviour:
   resultBar: {fileID: 0}
   canTarget: 1
   isExit: 0
+  isStartButton: 0
 --- !u!1 &19509794
 GameObject:
   m_ObjectHideFlags: 0
@@ -901,14 +902,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   round:
-  - colorSelection:
+  - colorDisplay: []
+    colorSelection:
     - {fileID: 0}
     timeToComplete: 10
-  - colorSelection:
+    displayisPassed: 0
+  - colorDisplay: []
+    colorSelection:
     - {fileID: 0}
     - {fileID: 0}
     timeToComplete: 10
+    displayisPassed: 0
   roundIndex: 0
+  roundInProgress: 0
+  displayIndex: 0
+  countdown: 2
+  pointPlayer01: 0
+  pointPlayer02: 0
 --- !u!1 &1534225141
 GameObject:
   m_ObjectHideFlags: 0
@@ -1799,6 +1809,7 @@ MonoBehaviour:
   resultBar: {fileID: 0}
   canTarget: 1
   isExit: 0
+  isStartButton: 0
 --- !u!212 &3048322399501171369
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2009,6 +2020,7 @@ MonoBehaviour:
   resultBar: {fileID: 0}
   canTarget: 1
   isExit: 0
+  isStartButton: 0
 --- !u!1 &4798920092467121314
 GameObject:
   m_ObjectHideFlags: 0
@@ -2044,6 +2056,7 @@ MonoBehaviour:
   resultBar: {fileID: 0}
   canTarget: 1
   isExit: 0
+  isStartButton: 0
 --- !u!1 &5794710578704552996
 GameObject:
   m_ObjectHideFlags: 0
@@ -2147,7 +2160,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2986528878967185123}
-  m_LocalRotation: {x: 0, y: -0.09045874, z: 0, w: 0.9959002}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -2.06, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -2158,7 +2171,7 @@ Transform:
   - {fileID: 213831070}
   m_Father: {fileID: 0}
   m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: -10.38, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &6408615896547402896
 GameObject:
   m_ObjectHideFlags: 0

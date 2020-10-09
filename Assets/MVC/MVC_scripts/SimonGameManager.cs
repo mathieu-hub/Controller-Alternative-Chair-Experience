@@ -10,10 +10,12 @@ public class SimonGameManager : MonoBehaviour
     [Header("ROUND")]
     public int roundIndex;
     public bool roundInProgress = false;
-    public bool gameIsStarted = false;
+
+    [Header("DISPLAY")]
+    public int displayIndex;
 
     [Header("TIME")]
-    [SerializeField] private float countdown;
+    public float countdown;
 
     [Header("PLAYER 01")]
     public int pointPlayer01;
@@ -29,7 +31,7 @@ public class SimonGameManager : MonoBehaviour
 
         roundIndex = 0;
         countdown = round[roundIndex].timeToComplete;
-        
+
         StartGame();
     }
 
@@ -40,13 +42,25 @@ public class SimonGameManager : MonoBehaviour
             countdown -= Time.deltaTime;
         }
 
-        if (!roundInProgress && gameIsStarted)
+        if (!roundInProgress && round[roundIndex].displayisPassed == true)
         {
+            Debug.Log("roundIsFinish");
             roundIndex++;
+            countdown = round[roundIndex].timeToComplete;
         }
     }
 
     void StartGame()
+    {
+
+        StartDisplayColor();
+    }
+    void StartDisplayColor()
+    {
+        StartRound();
+    }
+
+    void StartRound()
     {
 
     }
