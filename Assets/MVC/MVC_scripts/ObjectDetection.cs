@@ -19,19 +19,14 @@ public class ObjectDetection : MonoBehaviour
 
     private void Update()
     {
-        if (gameObject.GetComponentInParent<TargetableObject>().objectTargeted == gameObject.GetComponentInParent<TargetableObject>().objectToTarget)
+        if (gameObject.GetComponentInParent<TargetableObject>().objectTargeted == gameObject.GetComponentInParent<TargetableObject>().objectToTarget || isStartButton == true)
         {
             resultBar = validationBar; 
         }
         else
         {
             resultBar = refuseBar;
-        }
-
-        if (isStartButton == true)
-        {
-
-        }
+        }        
     }
 
     private void OnTriggerEnter(Collider other)
@@ -94,6 +89,13 @@ public class ObjectDetection : MonoBehaviour
             yield return new WaitForSeconds(1f);
             resultBar.SetActive(false);
             yield return new WaitForSeconds(1f);
+
+            if (isStartButton)
+            {
+                SimonGameManager.sgm.StartGame();
+                yield return new WaitForSeconds(1f);
+                gameObject.SetActive(false);
+            }
         }        
     }
 }
