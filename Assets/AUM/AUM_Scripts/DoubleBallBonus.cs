@@ -49,6 +49,8 @@ public class DoubleBallBonus : MonoBehaviour
 
     void DestroyTheObject()
     {
+        PongManager.pm.bonusPrefabs.Remove(animator);
+
         Destroy(gameObject);
     }
 }

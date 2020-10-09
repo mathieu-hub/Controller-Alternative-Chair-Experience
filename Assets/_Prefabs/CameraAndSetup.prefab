@@ -353,8 +353,10 @@ MonoBehaviour:
   pongScore2: {fileID: 2595359511555224637}
   doubleBallBonusPrefab: {fileID: 6412144009810564076, guid: b6237dc30683ec94293ffc95b88ea48f,
     type: 3}
+  doubleBonusActive: 1
   minDoubleBallCooldown: 10
   maxDoubleBallCooldown: 15
+  bonusPrefabs: []
 --- !u!1 &4798920091008322726
 GameObject:
   m_ObjectHideFlags: 0

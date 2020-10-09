@@ -38,8 +38,11 @@ public class PongBallController : MonoBehaviour
 
         //rb.AddForce(Vector3.up);
 
-        baseSpeedImpulse = speedImpulse;
-        baseSpeedAttraction = speedAttraction;
+        if(baseSpeedImpulse == 0)
+            baseSpeedImpulse = speedImpulse;
+
+        if (baseSpeedAttraction == 0)
+            baseSpeedAttraction = speedAttraction;
 
         playerTarget = GameObject.Find("Player" + playerNumberTarget).transform;
 
@@ -61,7 +64,7 @@ public class PongBallController : MonoBehaviour
         {
             collision.gameObject.GetComponent<Animator>().SetTrigger("Bump");
 
-            rb.velocity = (((transform.position - playerTarget.position).normalized * 1f) + ((transform.position - playerTarget.GetChild(0).position).normalized * 1f)).normalized * speedImpulse;
+            rb.velocity = (((transform.position - playerTarget.position).normalized * 1f) + ((transform.position - collision.transform.position).normalized * 1f)).normalized * speedImpulse;
 
             nonPlayerTarget = playerTarget;
 

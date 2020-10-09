@@ -15,13 +15,15 @@ public class PongManager : MonoBehaviour
     int pongScoreNumber1 = 0;
     int pongScoreNumber2 = 0;
 
+    public bool doubleBonusActive;
+
     public float minDoubleBallCooldown;
     public float maxDoubleBallCooldown;
 
     float doubleBallCooldown;
     float doubleBallCooldownTimer;
 
-    List<Animator> bonusPrefabs = new List<Animator>();
+    [HideInInspector] public List<Animator> bonusPrefabs = new List<Animator>();
 
     // Start is called before the first frame update
     void Start()
@@ -35,14 +37,15 @@ public class PongManager : MonoBehaviour
 
     private void Update()
     {
-        if(doubleBallCooldownTimer < doubleBallCooldown)
-        {
-            doubleBallCooldownTimer += Time.deltaTime;
-        }
-        else
-        {
-            SpawnDoubleBallBonus();
-        }
+        if(doubleBonusActive)
+            if (doubleBallCooldownTimer < doubleBallCooldown)
+            {
+                doubleBallCooldownTimer += Time.deltaTime;
+            }
+            else
+            {
+                SpawnDoubleBallBonus();
+            }
     }
 
     void SpawnDoubleBallBonus()
@@ -67,6 +70,11 @@ public class PongManager : MonoBehaviour
         else
         {
             pongScoreNumber1 += 1;
+        }
+
+        for(int i = 0; i < bonusPrefabs.Count; i++)
+        {
+            bonusPrefabs[i].SetTrigger("Disappear");
         }
 
         pongScore1.GetComponent<TextMeshProUGUI>().text = "" + pongScoreNumber1;
