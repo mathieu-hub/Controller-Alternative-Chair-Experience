@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Vuforia;
 
 public class SimonGameManager : MonoBehaviour
 {
@@ -64,16 +65,27 @@ public class SimonGameManager : MonoBehaviour
 
     public void StartGame()
     {
+        MancheCompositor manche = round[roundIndex];
 
-        StartDisplayColor();
+        redObject.SetActive(true);
+        greenObject.SetActive(true);
+        yellowObject.SetActive(true);
+        blueObject.SetActive(true);
+        StartCoroutine(StartDisplayColor());
     }
-    void StartDisplayColor()
+    IEnumerator StartDisplayColor()
     {
+        MancheCompositor manche = round[roundIndex];
+
+        Instantiate(round[roundIndex].colorDisplay[0], round[roundIndex].displayPosition.transform.position, round[roundIndex].displayPosition.transform.rotation);
+        yield return new WaitForSeconds(manche.rateDisplay);
         StartRound();
     }
 
     void StartRound()
     {
+        roundInProgress = true;
+        round[roundIndex].displayIsPassed = true;
 
     }
 }

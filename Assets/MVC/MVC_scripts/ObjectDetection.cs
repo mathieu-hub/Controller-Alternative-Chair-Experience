@@ -9,7 +9,6 @@ public class ObjectDetection : MonoBehaviour
     public GameObject refuseBar;
     [SerializeField] private GameObject resultBar;
     [SerializeField] private bool canTarget = true;
-    [SerializeField] private bool isExit = false;
     [SerializeField] private bool isStartButton;
 
     private void Start()
