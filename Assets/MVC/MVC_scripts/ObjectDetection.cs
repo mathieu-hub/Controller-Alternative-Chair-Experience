@@ -1,13 +1,16 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using Vuforia;
 
 public class ObjectDetection : MonoBehaviour
 {
+    public GameObject bar;
+    public GameObject validationBar;
+    public GameObject refuseBar;
     [SerializeField] private GameObject resultBar;
-    [SerializeField] private GameObject validationBar;
-    [SerializeField] private GameObject refuseBar;
+    [SerializeField] private bool canTarget = true;
+    [SerializeField] private bool isExit = false;
+
 
     private void Start()
     {
@@ -16,7 +19,7 @@ public class ObjectDetection : MonoBehaviour
 
     private void Update()
     {
-        if (gameObject.GetComponentInParent<TargetableObjects>().objectTargeted == gameObject.GetComponentInParent<TargetableObjects>().objectToTarget)
+        if (gameObject.GetComponentInParent<TargetableObject>().objectTargeted == gameObject.GetComponentInParent<TargetableObject>().objectToTarget)
         {
             resultBar = validationBar; 
         }
@@ -30,33 +33,62 @@ public class ObjectDetection : MonoBehaviour
     {
         if (other.CompareTag("Viseur"))
         {
-            Debug.Log("an object is target");
-            gameObject.GetComponentInParent<TargetableObjects>().objectTargeted = gameObject;
-            StartCoroutine(LoadBar());
+            if(canTarget == true)
+            {
+                canTarget = false;
+                Debug.Log("an object is target");
+                Debug.Log("je peux plus target");
+                gameObject.GetComponentInParent<TargetableObject>().objectTargeted = gameObject;
+                StartCoroutine(LoadBar());
+            }            
         }        
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.CompareTag("Viseur") && !canTarget)
+        {
+            Debug.Log("je peux target");
+            canTarget = true;
+            gameObject.GetComponentInParent<TargetableObject>().objectTargeted = null;
+            bar.SetActive(false);
+        }
     }
 
     IEnumerator LoadBar()
     {
-        yield return new WaitForSeconds(0.5f);
-        //Jauge jaune qui augmente
-        yield return new WaitForSeconds(0.5f);
-        StartCoroutine(ResultBarDisplay());
+        yield return new WaitForSeconds(1f);
+        if (gameObject.GetComponentInParent<TargetableObject>().objectTargeted != null && !canTarget) //HERE
+        {
+            //yield return new WaitForSeconds(1f);
+            bar.SetActive(true);
+            yield return new WaitForSeconds(2f);
+            StartCoroutine(ResultBarDisplay());
+        }
+        /*else
+        {
+            yield break;
+        }*/
     }
 
     IEnumerator ResultBarDisplay()
     {
-        resultBar.SetActive(true);
-        yield return new WaitForSeconds(0.5f);
-        resultBar.SetActive(false);
-        yield return new WaitForSeconds(0.5f);
-        resultBar.SetActive(true);
-        yield return new WaitForSeconds(0.5f);
-        resultBar.SetActive(false);
-        yield return new WaitForSeconds(0.5f);
-        resultBar.SetActive(true);
-        yield return new WaitForSeconds(0.5f);
-        resultBar.SetActive(false);
-        yield return new WaitForSeconds(0.5f);
+        if (gameObject.GetComponentInParent<TargetableObject>().objectTargeted != null && !canTarget)
+        {
+            canTarget = true;
+            bar.SetActive(false);
+            resultBar.SetActive(true);
+            yield return new WaitForSeconds(1f);
+            resultBar.SetActive(false);
+            yield return new WaitForSeconds(1f);
+            resultBar.SetActive(true);
+            yield return new WaitForSeconds(1f);
+            resultBar.SetActive(false);
+            yield return new WaitForSeconds(1f);
+            resultBar.SetActive(true);
+            yield return new WaitForSeconds(1f);
+            resultBar.SetActive(false);
+            yield return new WaitForSeconds(1f);
+        }        
     }
 }
