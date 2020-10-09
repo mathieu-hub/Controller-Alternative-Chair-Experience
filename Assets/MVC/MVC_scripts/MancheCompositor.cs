@@ -5,6 +5,7 @@ using UnityEngine;
 [System.Serializable]
 public class MancheCompositor 
 {
+    public GameObject[] colorDisplay;
     public GameObject[] colorSelection;
     public float timeToComplete;
 }
