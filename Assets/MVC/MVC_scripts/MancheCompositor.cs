@@ -6,4 +6,5 @@ using UnityEngine;
 public class MancheCompositor 
 {
     public GameObject[] colorSelection;
+    public float timeToComplete;
 }
