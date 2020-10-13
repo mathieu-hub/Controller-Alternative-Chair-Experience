@@ -28,6 +28,7 @@ float ypr[3];           // [yaw, pitch, roll]   yaw/pitch/roll container and gra
 void setup() {
   Wire.begin();
   Wire.setClock(400000); // 400kHz I2C clock. Comment this line if having compilation difficulties
+  Wire.setWireTimeout(1000, true);
 
   Serial.begin(38400);
 
