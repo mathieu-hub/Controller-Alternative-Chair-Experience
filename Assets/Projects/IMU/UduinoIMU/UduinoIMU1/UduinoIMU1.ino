@@ -1,5 +1,5 @@
 #include "Uduino.h"  // Include Uduino library at the top of the sketch
-Uduino uduino("IMU");
+Uduino uduino("IMU1");
 
 #include "I2Cdev.h"
 #include "MPU6050_6Axis_MotionApps20.h"
