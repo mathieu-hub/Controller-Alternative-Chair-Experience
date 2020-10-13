@@ -67,6 +67,7 @@ void loop() {
     fifoCount = mpu.getFIFOCount();
 
     if ((mpuIntStatus & 0x10) || fifoCount == 1024) { // check if overflow
+      Serial.println("IMU is not connect");
       mpu.resetFIFO();
     } else if (mpuIntStatus & 0x02) {
       while (fifoCount < packetSize) fifoCount = mpu.getFIFOCount();
