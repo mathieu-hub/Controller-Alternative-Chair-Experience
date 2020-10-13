@@ -189,7 +189,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectToTarget: {fileID: 0}
   objectTargeted: {fileID: 0}
-  colorisValid: 0
 --- !u!1 &160517876
 GameObject:
   m_ObjectHideFlags: 0
@@ -1718,7 +1717,7 @@ MonoBehaviour:
     - {fileID: 1535237625}
     - {fileID: 1494740388}
     maximumIndexDisplay: 2
-    rateDisplay: 2
+    rateDisplay: 5
     displayIsPassed: 0
     colorSelection:
     - {fileID: 3048322399501171382}

@@ -77,10 +77,6 @@ public class SimonGameManager : MonoBehaviour
         MancheCompositor manche = round[roundIndex];
 
         displayPosition = manche.displayPositions[displayIndex];
-
-        //Update de objectToTarget
-
-        //gameObject.GetComponentInChildren<TargetableObject>().objectToTarget = manche.colorSelection[colorIndex];
     }
 
     public void StartGame()
@@ -103,6 +99,7 @@ public class SimonGameManager : MonoBehaviour
 
         for (int i = displayIndex; i < manche.maximumIndexDisplay; i++)
         {
+            displayPosition = manche.displayPositions[displayIndex];
             StartCoroutine(StartDisplayColor());
         }
 
