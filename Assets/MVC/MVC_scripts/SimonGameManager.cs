@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Vuforia;
@@ -18,7 +19,7 @@ public class SimonGameManager : MonoBehaviour
     [Header("DISPLAY")]
     public int displayIndex;
     public GameObject displayPosition;
-
+    private List<GameObject> spawnedColor;
 
     [Header("TIME")]
     public float countdown;
@@ -36,6 +37,7 @@ public class SimonGameManager : MonoBehaviour
     public GameObject blueObject;
     public GameObject startButton;
 
+    private MancheCompositor manche;
     void Initialisation()
     {
         displayIndex = 0;
@@ -50,6 +52,8 @@ public class SimonGameManager : MonoBehaviour
         sgm = this;
 
         MancheCompositor manche = round[roundIndex];
+
+        spawnedColor = new List<GameObject>();
 
         pointPlayer01 = 0;
         pointPlayer02 = 0;
@@ -70,11 +74,9 @@ public class SimonGameManager : MonoBehaviour
         {
             countdown -= Time.deltaTime;
         }
-
-
         //Update de displayPosition
-        
-        MancheCompositor manche = round[roundIndex];
+
+        manche = round[roundIndex];
 
         displayPosition = manche.displayPositions[displayIndex];
     }
@@ -92,7 +94,8 @@ public class SimonGameManager : MonoBehaviour
         MancheCompositor manche = round[roundIndex];
 
        
-        Instantiate(round[roundIndex].colorDisplay[displayIndex], displayPosition.transform.position, displayPosition.transform.rotation);
+        var _colorDisplay = Instantiate(round[roundIndex].colorDisplay[displayIndex], displayPosition.transform.position, displayPosition.transform.rotation);
+        spawnedColor.Add(_colorDisplay);
         yield return new WaitForSeconds(manche.rateDisplay);
         displayIndex++;
 
@@ -106,6 +109,11 @@ public class SimonGameManager : MonoBehaviour
 
         if (displayIndex == manche.maximumIndexDisplay)
         {
+            foreach (GameObject color in spawnedColor)
+            {
+                Destroy(color);
+            }
+            
             StartRound();
         }
     }
