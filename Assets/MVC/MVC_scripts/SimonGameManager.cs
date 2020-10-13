@@ -36,7 +36,14 @@ public class SimonGameManager : MonoBehaviour
     public GameObject blueObject;
     public GameObject startButton;
 
-
+    void Initialisation()
+    {
+        displayIndex = 0;
+        colorIndex = 0;
+        countdown = round[roundIndex].timeToComplete;
+        roundInProgress = false;
+        round[roundIndex].displayIsPassed = false;
+    }
 
     private void Start()
     {
@@ -45,11 +52,9 @@ public class SimonGameManager : MonoBehaviour
         pointPlayer01 = 0;
         pointPlayer02 = 0;
 
-        displayIndex = 0;
-        colorIndex = 0;
-
         roundIndex = 0;
-        countdown = round[roundIndex].timeToComplete;
+
+        Initialisation();
 
         startButton.SetActive(true);
     }
@@ -61,12 +66,6 @@ public class SimonGameManager : MonoBehaviour
             countdown -= Time.deltaTime;
         }
 
-        /*if (!roundInProgress && round[roundIndex].displayIsPassed == true)
-        {
-            Debug.Log("roundIsFinish");
-            roundIndex++;
-            countdown = round[roundIndex].timeToComplete;
-        }*/
 
         //Update de displayPosition
         
@@ -99,7 +98,7 @@ public class SimonGameManager : MonoBehaviour
         for (int i = displayIndex; i < manche.maximumIndexDisplay; i++)
         {
             displayIndex++;
-            StartDisplayColor();
+            StartCoroutine(StartDisplayColor());
         }
 
         if(displayIndex == manche.maximumIndexDisplay)
@@ -114,14 +113,17 @@ public class SimonGameManager : MonoBehaviour
         round[roundIndex].displayIsPassed = true;
 
         EndRound();
-    }    
+    }
 
+    public void ChangeColorSelection()
+    {
+        colorIndex++;
+    }
     void EndRound()
     {
         Debug.Log("roundIsFinish");
-        roundInProgress = false;
         roundIndex++;
-        round[roundIndex].displayIsPassed = false;
-        countdown = round[roundIndex].timeToComplete;
+        Initialisation();
+        StartCoroutine(StartDisplayColor());
     }
 }

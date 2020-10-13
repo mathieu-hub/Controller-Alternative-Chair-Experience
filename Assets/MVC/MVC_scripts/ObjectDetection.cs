@@ -74,7 +74,7 @@ public class ObjectDetection : MonoBehaviour
     {
         if (gameObject.GetComponentInParent<TargetableObject>().objectTargeted != null && !canTarget)
         {
-           // gameObject.GetComponentInParent<TargetableObject>().
+            SimonGameManager.sgm.ChangeColorSelection();
             canTarget = true;
             bar.SetActive(false);
             resultBar.SetActive(true);
@@ -89,6 +89,7 @@ public class ObjectDetection : MonoBehaviour
             yield return new WaitForSeconds(1f);
             resultBar.SetActive(false);
             yield return new WaitForSeconds(1f);
+            
 
             if (isStartButton)
             {
