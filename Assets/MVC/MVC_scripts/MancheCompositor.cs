@@ -8,13 +8,14 @@ public class MancheCompositor
     [Header("Display")]
     public GameObject[] colorDisplay;
     public GameObject[] displayPositions;
-    public GameObject displayPosition;
+    public int maximumIndexDisplay;
     public float rateDisplay;
     public bool displayIsPassed = false;
+    
 
     [Header("Round")]
     public GameObject[] colorSelection;
-    public int numberOfColor;
+    public int maximumIndexColor;
     public float timeToComplete;
 
 }
