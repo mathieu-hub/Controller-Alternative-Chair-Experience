@@ -13,7 +13,14 @@ namespace AK
 {
     namespace EVENTS
     {
-        static const AkUniqueID PLAY_EXPLOSION_FUSEE = 1351382450U;
+        static const AkUniqueID APPARITION_BOUTON_START = 1481623233U;
+        static const AkUniqueID CHARGEMENT_COULEUR = 1497809451U;
+        static const AkUniqueID COULEUR_BLEU = 2968600283U;
+        static const AkUniqueID COULEUR_JAUNE = 755896502U;
+        static const AkUniqueID COULEUR_ROUGE = 2716105235U;
+        static const AkUniqueID COULEUR_VERTE = 4126544963U;
+        static const AkUniqueID ECHEC_COULEUR = 889509821U;
+        static const AkUniqueID VALIDATION_COULEUR = 52329734U;
     } // namespace EVENTS
 
     namespace BANKS

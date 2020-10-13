@@ -3,7 +3,16 @@
 	<AudioObjects>
 		<WorkUnit Name="Default Work Unit" ID="{26210975-1902-49CC-99EA-CCBAE576F01F}" PersistMode="Standalone">
 			<ChildrenList>
-				<Sound Name="Explosion fusée" ID="{C5DDC776-514C-44D8-91C1-FD511E3F9607}" ShortID="33157720">
+				<Sound Name="Apparition Bouton Start Simon" ID="{022A7981-1100-4510-896C-BE623DF52ABA}" ShortID="603229068">
+					<PropertyList>
+						<Property Name="Pitch" Type="int32">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{EA8142FA-76F9-4005-A8E1-6AAE788FE923}"/>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+					</PropertyList>
 					<ReferenceList>
 						<Reference Name="Conversion">
 							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0730BCD2-FD4C-4C47-9A4F-F87DEAF13A83}"/>
@@ -13,16 +22,170 @@
 						</Reference>
 					</ReferenceList>
 					<ChildrenList>
-						<AudioFileSource Name="Explosion fusée" ID="{DBBC573E-481B-45E4-B4A5-41061812BDE6}">
+						<AudioFileSource Name="Apparition Bouton Start Simon" ID="{FA9CD44D-662B-4882-BDFD-E17A8D39121A}">
 							<Language>SFX</Language>
-							<AudioFile>Explosion fusée.wav</AudioFile>
+							<AudioFile>Apparition Bouton Start Simon.wav</AudioFile>
 							<MediaIDList>
-								<MediaID ID="730268299"/>
+								<MediaID ID="422310762"/>
 							</MediaIDList>
 						</AudioFileSource>
 					</ChildrenList>
 					<ActiveSourceList>
-						<ActiveSource Name="Explosion fusée" ID="{DBBC573E-481B-45E4-B4A5-41061812BDE6}" Platform="Linked"/>
+						<ActiveSource Name="Apparition Bouton Start Simon" ID="{FA9CD44D-662B-4882-BDFD-E17A8D39121A}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="Chargement" ID="{E2506FF4-57E1-4896-B1FC-097338BA70E6}" ShortID="326640674">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0730BCD2-FD4C-4C47-9A4F-F87DEAF13A83}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EAB80688-E4E7-4E73-9D7E-8AC04DA89FC2}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Chargement" ID="{09AA3340-F1D2-4495-9241-8C06C60D9B8C}">
+							<Language>SFX</Language>
+							<AudioFile>Chargement.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="671331922"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="Chargement" ID="{09AA3340-F1D2-4495-9241-8C06C60D9B8C}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="Echec" ID="{58C7CA29-FCF1-42AE-9BA9-0D951B9AE823}" ShortID="7351196">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0730BCD2-FD4C-4C47-9A4F-F87DEAF13A83}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EAB80688-E4E7-4E73-9D7E-8AC04DA89FC2}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Echec" ID="{E34A1289-0151-4A0C-BFE4-31E6FEAA43F9}">
+							<Language>SFX</Language>
+							<AudioFile>Echec.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="259941188"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="Echec" ID="{E34A1289-0151-4A0C-BFE4-31E6FEAA43F9}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="simon_bleu" ID="{70A6ED25-3A82-4CCB-853B-C7B235A47276}" ShortID="580624336">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0730BCD2-FD4C-4C47-9A4F-F87DEAF13A83}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EAB80688-E4E7-4E73-9D7E-8AC04DA89FC2}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="simon_bleu" ID="{49ADD787-E6A3-48F7-BD29-61E9A4E931F5}">
+							<Language>SFX</Language>
+							<AudioFile>simon_bleu.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="104925976"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="simon_bleu" ID="{49ADD787-E6A3-48F7-BD29-61E9A4E931F5}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="simon_jaune" ID="{158F2B12-F17E-4361-BEA5-5FA88216E145}" ShortID="962679863">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0730BCD2-FD4C-4C47-9A4F-F87DEAF13A83}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EAB80688-E4E7-4E73-9D7E-8AC04DA89FC2}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="simon_jaune" ID="{85175E92-D0B0-41F5-987D-46CF174EAB5A}">
+							<Language>SFX</Language>
+							<AudioFile>simon_jaune.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="278557087"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="simon_jaune" ID="{85175E92-D0B0-41F5-987D-46CF174EAB5A}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="simon_rouge" ID="{F842FC5F-362F-46EF-B4EE-AA6BA3EBF894}" ShortID="130497326">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0730BCD2-FD4C-4C47-9A4F-F87DEAF13A83}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EAB80688-E4E7-4E73-9D7E-8AC04DA89FC2}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="simon_rouge" ID="{96054FA0-D12D-4E81-8D33-A0A0A0FD303D}">
+							<Language>SFX</Language>
+							<AudioFile>simon_rouge.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="759512309"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="simon_rouge" ID="{96054FA0-D12D-4E81-8D33-A0A0A0FD303D}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="simon_vert" ID="{4C9694D8-7E66-4B46-8A31-97EBFCA6DB7D}" ShortID="1008716082">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0730BCD2-FD4C-4C47-9A4F-F87DEAF13A83}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EAB80688-E4E7-4E73-9D7E-8AC04DA89FC2}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="simon_vert" ID="{00FDA5BB-2ADA-404F-9A88-FAFEB8806B5E}">
+							<Language>SFX</Language>
+							<AudioFile>simon_vert.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="712975549"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="simon_vert" ID="{00FDA5BB-2ADA-404F-9A88-FAFEB8806B5E}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="Validation" ID="{1830B53B-B3FB-41BD-9BE5-6C4437834F3A}" ShortID="73102679">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0730BCD2-FD4C-4C47-9A4F-F87DEAF13A83}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EAB80688-E4E7-4E73-9D7E-8AC04DA89FC2}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Validation" ID="{F14C02F3-FDB3-4372-B6EF-2760B5266913}">
+							<Language>SFX</Language>
+							<AudioFile>Validation.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="909866962"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="Validation" ID="{F14C02F3-FDB3-4372-B6EF-2760B5266913}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
 			</ChildrenList>

@@ -3,12 +3,89 @@
 	<Events>
 		<WorkUnit Name="Default Work Unit" ID="{3BA0FC63-CA1B-457F-8A9B-9587479179C6}" PersistMode="Standalone">
 			<ChildrenList>
-				<Event Name="Play_Explosion_Fusee" ID="{B20914AC-C515-4593-BD9C-4A3526CABCBC}">
+				<Event Name="Couleur_Rouge" ID="{3DE89AAA-B261-41D4-BFBF-B3561F1F61B4}">
 					<ChildrenList>
-						<Action Name="" ID="{44450679-B02E-406B-BAA5-13B870739837}" ShortID="633823209">
+						<Action Name="" ID="{FC1DE5AD-B16B-4374-99D1-6D7EAA8D1472}" ShortID="170437892">
 							<ReferenceList>
 								<Reference Name="Target">
-									<ObjectRef Name="Explosion fusée" ID="{C5DDC776-514C-44D8-91C1-FD511E3F9607}" WorkUnitID="{26210975-1902-49CC-99EA-CCBAE576F01F}"/>
+									<ObjectRef Name="simon_rouge" ID="{F842FC5F-362F-46EF-B4EE-AA6BA3EBF894}" WorkUnitID="{26210975-1902-49CC-99EA-CCBAE576F01F}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Couleur_Jaune" ID="{7FED2E0D-759F-4496-8BCA-A7327FE3E07B}">
+					<ChildrenList>
+						<Action Name="" ID="{7EAFF153-DDE8-4568-AB35-5E5359FFAA06}" ShortID="1007195813">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="simon_jaune" ID="{158F2B12-F17E-4361-BEA5-5FA88216E145}" WorkUnitID="{26210975-1902-49CC-99EA-CCBAE576F01F}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Couleur_Bleu" ID="{0E99172E-FF57-4103-B9BA-B7F13A98AEC1}">
+					<ChildrenList>
+						<Action Name="" ID="{95C69165-BB2C-403F-9DC3-CE01B8A9CFF1}" ShortID="250982663">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="simon_bleu" ID="{70A6ED25-3A82-4CCB-853B-C7B235A47276}" WorkUnitID="{26210975-1902-49CC-99EA-CCBAE576F01F}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Couleur_Verte" ID="{35255428-5ED2-4780-BE6B-032583D995E7}">
+					<ChildrenList>
+						<Action Name="" ID="{4A5F1D66-6345-4B89-A871-2355B00ED787}" ShortID="359894767">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="simon_vert" ID="{4C9694D8-7E66-4B46-8A31-97EBFCA6DB7D}" WorkUnitID="{26210975-1902-49CC-99EA-CCBAE576F01F}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Validation_Couleur" ID="{ECD0298B-E59E-4678-9C4F-276B7E70FB83}">
+					<ChildrenList>
+						<Action Name="" ID="{38DE69CC-7CAE-49F1-9E91-EE3318F334C9}" ShortID="366946029">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Validation" ID="{1830B53B-B3FB-41BD-9BE5-6C4437834F3A}" WorkUnitID="{26210975-1902-49CC-99EA-CCBAE576F01F}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Chargement_Couleur" ID="{2A4658F4-4962-492E-ADAE-BA01AFFE9B98}">
+					<ChildrenList>
+						<Action Name="" ID="{EEA938FB-509F-4CB3-A548-C49DC8014DA8}" ShortID="228245819">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Chargement" ID="{E2506FF4-57E1-4896-B1FC-097338BA70E6}" WorkUnitID="{26210975-1902-49CC-99EA-CCBAE576F01F}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Echec_Couleur" ID="{70D8389E-B6BE-4EAD-9494-2F367D2FA4FC}">
+					<ChildrenList>
+						<Action Name="" ID="{00D0166F-658F-4C3F-9F9E-C155A1A95D8A}" ShortID="879337741">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Echec" ID="{58C7CA29-FCF1-42AE-9BA9-0D951B9AE823}" WorkUnitID="{26210975-1902-49CC-99EA-CCBAE576F01F}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Apparition_Bouton_Start" ID="{49AC6BF7-7F4A-47A2-943C-FADA4062CE59}">
+					<ChildrenList>
+						<Action Name="" ID="{CE871B3F-ACDC-4CD7-BB3B-BD3AFE52DFE7}" ShortID="606012253">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Apparition Bouton Start Simon" ID="{022A7981-1100-4510-896C-BE623DF52ABA}" WorkUnitID="{26210975-1902-49CC-99EA-CCBAE576F01F}"/>
 								</Reference>
 							</ReferenceList>
 						</Action>
