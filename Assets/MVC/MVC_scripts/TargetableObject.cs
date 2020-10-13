@@ -7,7 +7,10 @@ public class TargetableObject : MonoBehaviour
     //Object
     [Header("Object")]
     public GameObject objectToTarget;
-    public GameObject objectTargeted;  
+    public GameObject objectTargeted;
+
+    [Header("Color Validation")]
+    public bool colorisValid = false;
 
     private void Start()
     {

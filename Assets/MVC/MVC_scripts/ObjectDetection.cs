@@ -74,6 +74,7 @@ public class ObjectDetection : MonoBehaviour
     {
         if (gameObject.GetComponentInParent<TargetableObject>().objectTargeted != null && !canTarget)
         {
+           // gameObject.GetComponentInParent<TargetableObject>().
             canTarget = true;
             bar.SetActive(false);
             resultBar.SetActive(true);
