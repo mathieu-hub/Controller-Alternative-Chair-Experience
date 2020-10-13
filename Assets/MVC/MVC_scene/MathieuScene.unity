@@ -413,7 +413,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &374618415
 Transform:
   m_ObjectHideFlags: 0
@@ -1575,6 +1575,12 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1406002933 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5831636637009597349, guid: e92b694b0940eb748b44775442c67484,
+    type: 3}
+  m_PrefabInstance: {fileID: 5831636636266509648}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1494740388
 GameObject:
   m_ObjectHideFlags: 0
@@ -1700,12 +1706,27 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   round:
+  - colorDisplay:
+    - {fileID: 6871654937383387211, guid: 969416221567f5843b6152e49a9b27c1, type: 3}
+    - {fileID: 1406002933}
+    displayPositions:
+    - {fileID: 1078363824}
+    - {fileID: 1320420291}
+    maximumIndexDisplay: 1
+    rateDisplay: 2
+    displayIsPassed: 0
+    colorSelection:
+    - {fileID: 3048322399501171382}
+    - {fileID: 5794710578704552996}
+    maximumIndexColor: 1
+    timeToComplete: 10
   - colorDisplay: []
     displayPositions: []
     maximumIndexDisplay: 0
     rateDisplay: 0
     displayIsPassed: 0
     colorSelection:
+    - {fileID: 0}
     - {fileID: 0}
     maximumIndexColor: 0
     timeToComplete: 10
@@ -2840,7 +2861,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &3048322399501171383
 Transform:
   m_ObjectHideFlags: 0
@@ -2950,7 +2971,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!135 &4601585012367733822
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -3035,7 +3056,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &5794710578704552997
 Transform:
   m_ObjectHideFlags: 0
