@@ -338,7 +338,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rotationOffset: {x: 45, y: 45, z: 90}
-  speedFactor: 100
+  speedFactor: 1000
   imuName: r
   imuReference: IMU1
 --- !u!4 &313503142
@@ -698,7 +698,7 @@ PrefabInstance:
     - target: {fileID: 114023058375386772, guid: bb5e6aea88a650f4a8317e74940b0ea4,
         type: 3}
       propertyPath: ManagerState
-      value: 2
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 114023058375386772, guid: bb5e6aea88a650f4a8317e74940b0ea4,
         type: 3}
@@ -718,7 +718,7 @@ PrefabInstance:
     - target: {fileID: 114023058375386772, guid: bb5e6aea88a650f4a8317e74940b0ea4,
         type: 3}
       propertyPath: autoReconnect
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 114023058375386772, guid: bb5e6aea88a650f4a8317e74940b0ea4,
         type: 3}
@@ -749,6 +749,16 @@ PrefabInstance:
         type: 3}
       propertyPath: OnDataReceivedEvent.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 114023058375386772, guid: bb5e6aea88a650f4a8317e74940b0ea4,
+        type: 3}
+      propertyPath: debugLevel
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114023058375386772, guid: bb5e6aea88a650f4a8317e74940b0ea4,
+        type: 3}
+      propertyPath: autoReconnectDelay
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 3948355414141522559, guid: bb5e6aea88a650f4a8317e74940b0ea4,
         type: 3}
@@ -2340,7 +2350,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rotationOffset: {x: 45, y: 45, z: 90}
-  speedFactor: 100
+  speedFactor: 1000
   imuName: r
   imuReference: IMU2
 --- !u!4 &1891295181
