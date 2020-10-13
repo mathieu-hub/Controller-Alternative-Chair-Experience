@@ -247,7 +247,12 @@ namespace Uduino {
                 catch (TimeoutException e)
                 {
                     if (boardStatus == BoardStatus.Found)
+                    {
                         Log.Debug("ReadTimeout. Are you sure something is written in the Serial of the board? \n" + e);
+
+                        //UduinoManager.Instance.shouldReconnect = true;
+                    }
+                        
                 }
             }
             catch (Exception e)

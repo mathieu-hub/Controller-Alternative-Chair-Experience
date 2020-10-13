@@ -1,5 +1,5 @@
 #include "Uduino.h"  // Include Uduino library at the top of the sketch
-Uduino uduino("IMU");
+Uduino uduino("IMU2");
 
 #include "I2Cdev.h"
 #include "MPU6050_6Axis_MotionApps20.h"
@@ -28,6 +28,7 @@ float ypr[3];           // [yaw, pitch, roll]   yaw/pitch/roll container and gra
 void setup() {
   Wire.begin();
   Wire.setClock(400000); // 400kHz I2C clock. Comment this line if having compilation difficulties
+  Wire.setWireTimeout(1000, true);
 
   Serial.begin(38400);
 
@@ -67,7 +68,6 @@ void loop() {
     fifoCount = mpu.getFIFOCount();
 
     if ((mpuIntStatus & 0x10) || fifoCount == 1024) { // check if overflow
-      Serial.println("IMU is not connect");
       mpu.resetFIFO();
     } else if (mpuIntStatus & 0x02) {
       while (fifoCount < packetSize) fifoCount = mpu.getFIFOCount();
