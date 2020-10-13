@@ -74,6 +74,12 @@ public class SimonGameManager : MonoBehaviour
         {
             countdown -= Time.deltaTime;
         }
+
+        if (countdown <= 0)
+        {
+            EndRound();
+        }
+
         //Update de displayPosition
 
         manche = round[roundIndex];
