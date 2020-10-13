@@ -35,8 +35,8 @@ public class ObjectDetection : MonoBehaviour
             if(canTarget == true)
             {
                 canTarget = false;
-                Debug.Log("an object is target");
-                Debug.Log("je peux plus target");
+                //Debug.Log("an object is target");
+                //Debug.Log("je peux plus target");
                 gameObject.GetComponentInParent<TargetableObject>().objectTargeted = gameObject;
                 StartCoroutine(LoadBar());
             }            
@@ -47,7 +47,7 @@ public class ObjectDetection : MonoBehaviour
     {
         if (other.CompareTag("Viseur") && !canTarget)
         {
-            Debug.Log("je peux target");
+            //Debug.Log("je peux target");
             canTarget = true;
             gameObject.GetComponentInParent<TargetableObject>().objectTargeted = null;
             bar.SetActive(false);
@@ -74,27 +74,29 @@ public class ObjectDetection : MonoBehaviour
     {
         if (gameObject.GetComponentInParent<TargetableObject>().objectTargeted != null && !canTarget)
         {
-            SimonGameManager.sgm.ChangeColorSelection();
             canTarget = true;
             bar.SetActive(false);
             resultBar.SetActive(true);
-            yield return new WaitForSeconds(1f);
+            yield return new WaitForSeconds(0.3f);
             resultBar.SetActive(false);
-            yield return new WaitForSeconds(1f);
+            yield return new WaitForSeconds(0.3f);
             resultBar.SetActive(true);
-            yield return new WaitForSeconds(1f);
+            yield return new WaitForSeconds(0.3f);
             resultBar.SetActive(false);
-            yield return new WaitForSeconds(1f);
+            yield return new WaitForSeconds(0.3f);
             resultBar.SetActive(true);
-            yield return new WaitForSeconds(1f);
+            yield return new WaitForSeconds(0.3f);
             resultBar.SetActive(false);
-            yield return new WaitForSeconds(1f);
-            
+
+            if (!isStartButton && resultBar == validationBar) 
+            {
+                SimonGameManager.sgm.ChangeColorSelection();
+            }
 
             if (isStartButton)
             {
                 SimonGameManager.sgm.StartGame();
-                yield return new WaitForSeconds(1f);
+                yield return new WaitForSeconds(0.5f);
                 gameObject.SetActive(false);
             }
         }        

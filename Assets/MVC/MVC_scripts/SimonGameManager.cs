@@ -49,6 +49,8 @@ public class SimonGameManager : MonoBehaviour
     {
         sgm = this;
 
+        MancheCompositor manche = round[roundIndex];
+
         pointPlayer01 = 0;
         pointPlayer02 = 0;
 
@@ -57,6 +59,9 @@ public class SimonGameManager : MonoBehaviour
         Initialisation();
 
         startButton.SetActive(true);
+
+        gameObject.GetComponentInChildren<TargetableObject>().objectToTarget = manche.colorSelection[colorIndex];
+
     }
 
     private void Update()
@@ -75,7 +80,7 @@ public class SimonGameManager : MonoBehaviour
 
         //Update de objectToTarget
 
-        GetComponent<TargetableObject>().objectToTarget = manche.colorSelection[colorIndex];
+        //gameObject.GetComponentInChildren<TargetableObject>().objectToTarget = manche.colorSelection[colorIndex];
     }
 
     public void StartGame()
@@ -93,15 +98,16 @@ public class SimonGameManager : MonoBehaviour
        
         Instantiate(round[roundIndex].colorDisplay[displayIndex], displayPosition.transform.position, displayPosition.transform.rotation);
         yield return new WaitForSeconds(manche.rateDisplay);
-        
-        
+        displayIndex++;
+
+
         for (int i = displayIndex; i < manche.maximumIndexDisplay; i++)
         {
-            displayIndex++;
             StartCoroutine(StartDisplayColor());
         }
 
-        if(displayIndex == manche.maximumIndexDisplay)
+
+        if (displayIndex == manche.maximumIndexDisplay)
         {
             StartRound();
         }
@@ -109,15 +115,23 @@ public class SimonGameManager : MonoBehaviour
 
     void StartRound()
     {
+        MancheCompositor manche = round[roundIndex];
+
         roundInProgress = true;
         round[roundIndex].displayIsPassed = true;
 
-        EndRound();
+        if (colorIndex == manche.maximumIndexColor)
+        {
+            EndRound();
+        }
     }
 
     public void ChangeColorSelection()
     {
+        MancheCompositor manche = round[roundIndex];
+
         colorIndex++;
+        gameObject.GetComponentInChildren<TargetableObject>().objectToTarget = manche.colorSelection[colorIndex];
     }
     void EndRound()
     {
