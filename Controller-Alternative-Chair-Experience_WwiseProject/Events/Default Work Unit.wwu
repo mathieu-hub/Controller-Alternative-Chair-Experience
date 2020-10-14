@@ -91,6 +91,61 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Asteroide_Explosion" ID="{B0AB642C-35D2-47B1-A9DB-B226512E58C9}">
+					<ChildrenList>
+						<Action Name="" ID="{7AA71463-9CFE-4A69-843C-2AFFCFEA512A}" ShortID="160594209">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Asteroide qui explose" ID="{FC693745-10F8-4639-BD82-97EDA0209286}" WorkUnitID="{26210975-1902-49CC-99EA-CCBAE576F01F}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Balle_Bouclier" ID="{AEA2861F-DF31-4284-9DA3-61348F7388E3}">
+					<ChildrenList>
+						<Action Name="" ID="{693C2D16-F1C0-49DD-8E80-1336EF7FD72B}" ShortID="370190122">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Balle contre bouclier" ID="{188B7469-2847-422E-980D-532FB0BDCADA}" WorkUnitID="{26210975-1902-49CC-99EA-CCBAE576F01F}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Balle_Mur" ID="{2674B260-E76F-418E-A4B1-8CD6D4219CBA}">
+					<ChildrenList>
+						<Action Name="" ID="{D0ADE4F5-04BB-4E4B-8E7F-3FF18CB777ED}" ShortID="296842849">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Balle qui frappe un mur" ID="{42A72986-8EFF-4767-B4EC-28F3253CB62D}" WorkUnitID="{26210975-1902-49CC-99EA-CCBAE576F01F}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Apparition_Balle" ID="{8190D1E6-3B19-4D47-8375-C2B3E2B0E32E}">
+					<ChildrenList>
+						<Action Name="" ID="{8BE51898-AA50-4FB8-AF0B-BCE1D56A3848}" ShortID="291416692">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Balle qui apparait" ID="{952644DD-CB2F-4E07-B5F5-1FE0163B1571}" WorkUnitID="{26210975-1902-49CC-99EA-CCBAE576F01F}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Explosion_Vaisseau" ID="{17007919-3438-4F92-A479-74D16648904C}">
+					<ChildrenList>
+						<Action Name="" ID="{A0B1D52E-9ED4-4080-9E8C-DBF51FFEF9CA}" ShortID="66114218">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Explosion vaisseau" ID="{E9ACEF01-242A-4DCA-B5CA-A8189317A2E9}" WorkUnitID="{26210975-1902-49CC-99EA-CCBAE576F01F}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

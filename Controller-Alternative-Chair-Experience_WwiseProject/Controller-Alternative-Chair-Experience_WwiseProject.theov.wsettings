@@ -5,13 +5,19 @@
 			<PropertyList>
 				<Property Name="AudioFilesImporter\Path" Type="string" Value="C:\Users\theov\Desktop\Rubika\Année 2\Cours\Projet Zelda-Like\Son\Sons retouchés\Boss\"/>
 				<Property Name="Event Action List\{0E99172E-FF57-4103-B9BA-B7F13A98AEC1}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{17007919-3438-4F92-A479-74D16648904C}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{2674B260-E76F-418E-A4B1-8CD6D4219CBA}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{2A4658F4-4962-492E-ADAE-BA01AFFE9B98}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{35255428-5ED2-4780-BE6B-032583D995E7}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{3DE89AAA-B261-41D4-BFBF-B3561F1F61B4}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{49AC6BF7-7F4A-47A2-943C-FADA4062CE59}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{70D8389E-B6BE-4EAD-9494-2F367D2FA4FC}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{7FED2E0D-759F-4496-8BCA-A7327FE3E07B}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{8190D1E6-3B19-4D47-8375-C2B3E2B0E32E}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{AEA2861F-DF31-4284-9DA3-61348F7388E3}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{B0AB642C-35D2-47B1-A9DB-B226512E58C9}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{B20914AC-C515-4593-BD9C-4A3526CABCBC}\x64_Expand States" Type="string" Value=""/>
+				<Property Name="Event Action List\{EB84BE0D-881F-4739-B55E-3C2FDD062294}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="Event Action List\{ECD0298B-E59E-4678-9C4F-276B7E70FB83}\x64_Expand States" Type="string" Value=""/>
 				<Property Name="EventView\FilterMode1" Type="int32" Value="2"/>
 				<Property Name="ExternalSourcesInputPath" Type="string">
@@ -33,7 +39,7 @@
 				<Property Name="GenerateSoundBanks\x64_SelectedPlatforms" Type="string" Value="Z6SRhCaaO0KLYS/+ykE41A=="/>
 				<Property Name="GenerateSoundBanks\x64_SelectedSoundBanks" Type="string" Value=""/>
 				<Property Name="HardwareController\CurrentSession" Type="string" Value="{2451DD2E-A7B2-45E6-B93B-6F49B9B887AD}"/>
-				<Property Name="HardwareController\{2451DD2E-A7B2-45E6-B93B-6F49B9B887AD}\x64_ActiveGroups" Type="string" Value="dfw5eChnoUeD/1L/6RXoNQGEZET/////O/HXyHaMDEOXTOObVPownAGEZET/////"/>
+				<Property Name="HardwareController\{2451DD2E-A7B2-45E6-B93B-6F49B9B887AD}\x64_ActiveGroups" Type="string" Value="O/HXyHaMDEOXTOObVPownAGElmb/////dfw5eChnoUeD/1L/6RXoNQGElmb/////"/>
 				<Property Name="MeterView\LastObject1" Type="string" Value="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}"/>
 				<Property Name="MeterView\MeterMode1" Type="int32" Value="1"/>
 				<Property Name="MeterView\MeterMode1Viewpoint0" Type="int32" Value="1"/>

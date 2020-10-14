@@ -16,16 +16,48 @@
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="3161908922" Language="SFX" Hash="2563027523">
+		<SoundBank Id="3161908922" Language="SFX" Hash="2486129190">
 			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<IncludedEvents>
+				<Event Id="4140142695" Name="Apparition_Balle" ObjectPath="\Events\Default Work Unit\Apparition_Balle" DurationType="OneShot" DurationMin="1.001438" DurationMax="1.001438">
+					<IncludedMemoryFiles>
+						<File Id="699773342" Language="SFX">
+							<ShortName>Balle qui apparait.wav</ShortName>
+							<Path>SFX\Balle qui apparait_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
 				<Event Id="1481623233" Name="Apparition_Bouton_Start" ObjectPath="\Events\Default Work Unit\Apparition_Bouton_Start" DurationType="OneShot" DurationMin="2.248312" DurationMax="2.248312">
 					<IncludedMemoryFiles>
 						<File Id="422310762" Language="SFX">
 							<ShortName>Apparition Bouton Start Simon.wav</ShortName>
 							<Path>SFX\Apparition Bouton Start Simon_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="119072111" Name="Asteroide_Explosion" ObjectPath="\Events\Default Work Unit\Asteroide_Explosion" DurationType="OneShot" DurationMin="0.759313" DurationMax="0.759313">
+					<IncludedMemoryFiles>
+						<File Id="140509224" Language="SFX">
+							<ShortName>Asteroide qui explose.wav</ShortName>
+							<Path>SFX\Asteroide qui explose_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2087612307" Name="Balle_Bouclier" ObjectPath="\Events\Default Work Unit\Balle_Bouclier" DurationType="OneShot" DurationMin="0.362000" DurationMax="0.362000">
+					<IncludedMemoryFiles>
+						<File Id="923811716" Language="SFX">
+							<ShortName>Balle contre bouclier.wav</ShortName>
+							<Path>SFX\Balle contre bouclier_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3963030902" Name="Balle_Mur" ObjectPath="\Events\Default Work Unit\Balle_Mur" DurationType="OneShot" DurationMin="0.350500" DurationMax="0.350500">
+					<IncludedMemoryFiles>
+						<File Id="890710776" Language="SFX">
+							<ShortName>Balle qui frappe un mur.wav</ShortName>
+							<Path>SFX\Balle qui frappe un mur_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -74,6 +106,14 @@
 						<File Id="259941188" Language="SFX">
 							<ShortName>Echec.wav</ShortName>
 							<Path>SFX\Echec_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3198498328" Name="Explosion_Vaisseau" ObjectPath="\Events\Default Work Unit\Explosion_Vaisseau" DurationType="OneShot" DurationMin="0.860708" DurationMax="0.860708">
+					<IncludedMemoryFiles>
+						<File Id="40175533" Language="SFX">
+							<ShortName>Explosion vaisseau.wav</ShortName>
+							<Path>SFX\Explosion vaisseau_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>

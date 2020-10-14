@@ -49,7 +49,7 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: e167b60ecaf05448977f1fd0005d69b3
     GuidInternal: 
-    m_lastTime: -8585990055341639644
+    m_lastTime: -8585989193967895999
     List:
     - name: Main
       guid: d6fdf3f0a3d0314cb8580e04a7903baf
@@ -68,8 +68,20 @@ MonoBehaviour:
     ParentPath: Default Work Unit
     guid: 63fca03b1bca7f458a9b9587479179c6
     GuidInternal: 
-    m_lastTime: -8585990055341746542
+    m_lastTime: -8585989193967811247
     List:
+    - name: Apparition_Balle
+      guid: e6d19081193b474d8375c2b3e2b0e32e
+      id: 4140142695
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Apparition_Balle
+        ObjectType: 3
+      Path: Default Work Unit\Apparition_Balle
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Apparition_Bouton_Start
       guid: f76bac494a7fa247943cfada4062ce59
       id: 1481623233
@@ -79,6 +91,42 @@ MonoBehaviour:
       - ElementName: Apparition_Bouton_Start
         ObjectType: 3
       Path: Default Work Unit\Apparition_Bouton_Start
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Asteroide_Explosion
+      guid: 2c64abb0d235b147a9dbb226512e58c9
+      id: 119072111
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Asteroide_Explosion
+        ObjectType: 3
+      Path: Default Work Unit\Asteroide_Explosion
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Balle_Bouclier
+      guid: 1f86a2ae31df84429da361348f7388e3
+      id: 2087612307
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Balle_Bouclier
+        ObjectType: 3
+      Path: Default Work Unit\Balle_Bouclier
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Balle_Mur
+      guid: 60b274266fe78e41a4b18cd6d4219cba
+      id: 3963030902
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Balle_Mur
+        ObjectType: 3
+      Path: Default Work Unit\Balle_Mur
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
@@ -154,6 +202,18 @@ MonoBehaviour:
       maxAttenuation: 0
       maxDuration: -1
       minDuration: -1
+    - name: Explosion_Vaisseau
+      guid: 197900173834924fa47974d16648904c
+      id: 3198498328
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Explosion_Vaisseau
+        ObjectType: 3
+      Path: Default Work Unit\Explosion_Vaisseau
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
     - name: Validation_Couleur
       guid: 8b29d0ec9ee578469c4f276b7e70fb83
       id: 52329734
@@ -208,6 +268,8 @@ MonoBehaviour:
     List: []
   ExpandedItems:
   - /Controller-Alternative-Chair-Experience_WwiseProject
+  - /Controller-Alternative-Chair-Experience_WwiseProject/Events
+  - /Controller-Alternative-Chair-Experience_WwiseProject/Events/Default Work Unit
   - /Controller-Alternative-Chair-Experience_WwiseProject/SoundBanks
   - /Controller-Alternative-Chair-Experience_WwiseProject/SoundBanks/Default Work
     Unit

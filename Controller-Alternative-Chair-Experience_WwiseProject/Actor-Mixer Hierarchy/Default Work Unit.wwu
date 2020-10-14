@@ -188,6 +188,116 @@
 						<ActiveSource Name="Validation" ID="{F14C02F3-FDB3-4372-B6EF-2760B5266913}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
+				<Sound Name="Asteroide qui explose" ID="{FC693745-10F8-4639-BD82-97EDA0209286}" ShortID="150053849">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0730BCD2-FD4C-4C47-9A4F-F87DEAF13A83}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EAB80688-E4E7-4E73-9D7E-8AC04DA89FC2}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Asteroide qui explose" ID="{0D10D345-559F-4944-A4A4-C49BA84F1F62}">
+							<Language>SFX</Language>
+							<AudioFile>Asteroide qui explose.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="140509224"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="Asteroide qui explose" ID="{0D10D345-559F-4944-A4A4-C49BA84F1F62}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="Balle contre bouclier" ID="{188B7469-2847-422E-980D-532FB0BDCADA}" ShortID="967314213">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0730BCD2-FD4C-4C47-9A4F-F87DEAF13A83}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EAB80688-E4E7-4E73-9D7E-8AC04DA89FC2}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Balle contre bouclier" ID="{9E4248C5-BA69-41BE-957C-11C83458E2C3}">
+							<Language>SFX</Language>
+							<AudioFile>Balle contre bouclier.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="923811716"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="Balle contre bouclier" ID="{9E4248C5-BA69-41BE-957C-11C83458E2C3}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="Balle qui apparait" ID="{952644DD-CB2F-4E07-B5F5-1FE0163B1571}" ShortID="1052972777">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0730BCD2-FD4C-4C47-9A4F-F87DEAF13A83}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EAB80688-E4E7-4E73-9D7E-8AC04DA89FC2}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Balle qui apparait" ID="{89FF56B8-FD7C-4672-BEDF-AEC4951ADC8E}">
+							<Language>SFX</Language>
+							<AudioFile>Balle qui apparait.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="699773342"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="Balle qui apparait" ID="{89FF56B8-FD7C-4672-BEDF-AEC4951ADC8E}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="Balle qui frappe un mur" ID="{42A72986-8EFF-4767-B4EC-28F3253CB62D}" ShortID="79734649">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0730BCD2-FD4C-4C47-9A4F-F87DEAF13A83}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EAB80688-E4E7-4E73-9D7E-8AC04DA89FC2}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Balle qui frappe un mur" ID="{E3A210B8-5E9A-403D-A849-E5DA6BD29394}">
+							<Language>SFX</Language>
+							<AudioFile>Balle qui frappe un mur.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="890710776"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="Balle qui frappe un mur" ID="{E3A210B8-5E9A-403D-A849-E5DA6BD29394}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="Explosion vaisseau" ID="{E9ACEF01-242A-4DCA-B5CA-A8189317A2E9}" ShortID="951700474">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0730BCD2-FD4C-4C47-9A4F-F87DEAF13A83}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EAB80688-E4E7-4E73-9D7E-8AC04DA89FC2}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Explosion vaisseau" ID="{9D0F0BA5-2487-4BE0-9235-EC921DE8F927}">
+							<Language>SFX</Language>
+							<AudioFile>Explosion vaisseau.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="40175533"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="Explosion vaisseau" ID="{9D0F0BA5-2487-4BE0-9235-EC921DE8F927}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>
