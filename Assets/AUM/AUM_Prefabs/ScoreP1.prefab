@@ -66,8 +66,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 1
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: b1fe5e779e499d64b992178f5015a686, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: b1fe5e779e499d64b992178f5015a686, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -166,7 +166,7 @@ Animator:
   m_GameObject: {fileID: 2125050425186909405}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 7b977475e24f70447897203354ecf8e0, type: 2}
+  m_Controller: {fileID: 9100000, guid: f6a45027e801cf945ba25365747333b5, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
