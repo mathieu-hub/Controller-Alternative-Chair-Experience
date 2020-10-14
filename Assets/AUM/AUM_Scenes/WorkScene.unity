@@ -337,7 +337,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a1c47fa4ac834294eb2ebe22424560a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotationOffset: {x: 45, y: 45, z: 90}
+  rotationOffset: {x: 0, y: 0, z: 90}
   speedFactor: 1000
   imuName: r
   imuReference: IMU1
@@ -2349,7 +2349,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a1c47fa4ac834294eb2ebe22424560a6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotationOffset: {x: 45, y: 45, z: 90}
+  rotationOffset: {x: 0, y: 0, z: 90}
   speedFactor: 1000
   imuName: r
   imuReference: IMU2
