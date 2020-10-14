@@ -4,13 +4,11 @@ using UnityEngine;
 
 public class ShieldScaleChanger : MonoBehaviour
 {
-    public int scaleNumber;
-
     public float[] scales;
 
     // Update is called once per frame
     void Update()
     {
-        transform.localScale = new Vector2(1f, scales[scaleNumber - 1]);
+        transform.localScale = new Vector2(1f, scales[PongManager.pm.levelNumb - 1]);
     }
 }

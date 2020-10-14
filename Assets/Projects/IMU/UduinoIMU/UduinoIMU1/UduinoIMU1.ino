@@ -76,8 +76,8 @@ void loop() {
       mpu.getFIFOBytes(fifoBuffer, packetSize);
       fifoCount -= packetSize;
 
-      SendQuaternion();
-      //SendEuler();
+      //SendQuaternion();
+      SendEuler();
       //SendYawPitchRoll();
       //SendRealAccel();
       //SendWorldAccel();

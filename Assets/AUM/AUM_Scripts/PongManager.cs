@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PongManager : MonoBehaviour
 {
@@ -24,6 +25,8 @@ public class PongManager : MonoBehaviour
     float doubleBallCooldownTimer;
 
     [HideInInspector] public List<Animator> bonusPrefabs = new List<Animator>();
+
+    public int levelNumb;
 
     // Start is called before the first frame update
     void Start()
@@ -80,7 +83,35 @@ public class PongManager : MonoBehaviour
         pongScore1.GetComponent<TextMeshProUGUI>().text = "" + pongScoreNumber1;
         pongScore2.GetComponent<TextMeshProUGUI>().text = "" + pongScoreNumber2;
 
-        pongScore1.SetTrigger("Appear");
-        pongScore2.SetTrigger("Appear");
+        if(pongScoreNumber1 >= 10) 
+        {
+            StartCoroutine(ResetScoreAfter(4.5f));
+
+            pongScore1.SetTrigger("LevelUp");
+        }
+        else
+            pongScore1.SetTrigger("Appear");
+
+        if (pongScoreNumber2 >= 10)
+        {
+            StartCoroutine(ResetScoreAfter(4.5f));
+
+            pongScore2.SetTrigger("LevelUp");
+        }
+        else
+            pongScore2.SetTrigger("Appear");
+
+        SceneManager.LoadScene(0);
+
+    }
+
+    IEnumerator ResetScoreAfter(float time)
+    {
+        yield return new WaitForSeconds(time);
+
+        levelNumb++;
+
+        pongScoreNumber1 = 0;
+        pongScoreNumber2 = 0;
     }
 }

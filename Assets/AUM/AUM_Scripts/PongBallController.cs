@@ -85,12 +85,12 @@ public class PongBallController : MonoBehaviour
             playerTarget = GameObject.Find("Player" + playerNumberTarget).transform;
 
 
-            if (speedImpulse * 1.5f < speedImpulseLimit)
+            if (speedImpulse * 1.5f < speedImpulseLimit * PongManager.pm.levelNumb)
                 speedImpulse *= 1.5f;
             else
                 speedImpulse = speedImpulseLimit;
 
-            if (speedAttraction * 1.5f < speedAttractionLimit)
+            if (speedAttraction * 1.5f < speedAttractionLimit * PongManager.pm.levelNumb)
                 speedAttraction *= 1.5f;
             else
                 speedAttraction = speedAttractionLimit;
