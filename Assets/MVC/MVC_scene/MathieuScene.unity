@@ -1750,7 +1750,7 @@ MonoBehaviour:
     - {fileID: 3048322399501171382}
     - {fileID: 5794710578704552996}
     maximumIndexColor: 2
-    timeToComplete: 10
+    timeToComplete: 30
   - colorDisplay:
     - {fileID: 7064462686965839992, guid: f1b71555af44d244b9e660f7b062ef95, type: 3}
     - {fileID: 1673275454010023575, guid: b6fd3b974def1c344a580b9649acd19b, type: 3}
@@ -3363,7 +3363,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2986528878967185123}
-  m_LocalRotation: {x: 0, y: 0, z: -0.04536307, w: 0.9989706}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -2.06, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -3376,7 +3376,7 @@ Transform:
   - {fileID: 1149922451}
   m_Father: {fileID: 0}
   m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -5.2}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &6408615896547402896
 GameObject:
   m_ObjectHideFlags: 0

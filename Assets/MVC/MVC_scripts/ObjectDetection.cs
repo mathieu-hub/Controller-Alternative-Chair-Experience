@@ -7,7 +7,7 @@ public class ObjectDetection : MonoBehaviour
     public GameObject bar;
     public GameObject validationBar;
     public GameObject refuseBar;
-    [SerializeField] private GameObject resultBar;
+    [SerializeField] private GameObject resultBar;  
     [SerializeField] private bool canTarget = true;
     [SerializeField] private bool isStartButton;
 
@@ -57,7 +57,7 @@ public class ObjectDetection : MonoBehaviour
     IEnumerator LoadBar()
     {
         yield return new WaitForSeconds(1f);
-        if (gameObject.GetComponentInParent<TargetableObject>().objectTargeted != null && !canTarget) //HERE
+        if (gameObject.GetComponentInParent<TargetableObject>().objectTargeted != null && !canTarget) 
         {
             //yield return new WaitForSeconds(1f);
             bar.SetActive(true);

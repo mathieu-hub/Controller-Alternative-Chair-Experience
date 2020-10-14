@@ -16,7 +16,7 @@ public class TargetableObject : MonoBehaviour
 
     private void Update()
     {
-        print(objectTargeted);
+       //print(objectTargeted);
     }
 }
 
