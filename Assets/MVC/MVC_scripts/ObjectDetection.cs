@@ -64,10 +64,7 @@ public class ObjectDetection : MonoBehaviour
             yield return new WaitForSeconds(2f);
             StartCoroutine(ResultBarDisplay());
         }
-        /*else
-        {
-            yield break;
-        }*/
+        
     }
 
     IEnumerator ResultBarDisplay()

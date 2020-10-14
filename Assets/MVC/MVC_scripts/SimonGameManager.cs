@@ -19,7 +19,7 @@ public class SimonGameManager : MonoBehaviour
     [Header("DISPLAY")]
     public int displayIndex;
     public GameObject displayPosition;
-    private List<GameObject> spawnedColor;
+    [SerializeField] private List<GameObject> spawnedColor;
 
     [Header("TIME")]
     public float countdown;
@@ -99,14 +99,14 @@ public class SimonGameManager : MonoBehaviour
     {
         MancheCompositor manche = round[roundIndex];
 
-       
+        yield return new WaitForSeconds(manche.rateDisplay);
+        Debug.Log("instanciation couleur");
         var _colorDisplay = Instantiate(round[roundIndex].colorDisplay[displayIndex], displayPosition.transform.position, displayPosition.transform.rotation);
         spawnedColor.Add(_colorDisplay);
-        yield return new WaitForSeconds(manche.rateDisplay);
+        yield return new WaitForSeconds(0.8f);
         displayIndex++;
 
-
-        for (int i = displayIndex; i < manche.maximumIndexDisplay; i++)
+        if(displayIndex < manche.maximumIndexDisplay)
         {
             displayPosition = manche.displayPositions[displayIndex];
             StartCoroutine(StartDisplayColor());
@@ -115,6 +115,8 @@ public class SimonGameManager : MonoBehaviour
 
         if (displayIndex == manche.maximumIndexDisplay)
         {
+            yield return new WaitForSeconds(manche.rateDisplay);
+
             foreach (GameObject color in spawnedColor)
             {
                 Destroy(color);
@@ -141,6 +143,7 @@ public class SimonGameManager : MonoBehaviour
     {
         MancheCompositor manche = round[roundIndex];
 
+        Debug.Log("CHANGEMENT DE COULEUR");
         colorIndex++;
         gameObject.GetComponentInChildren<TargetableObject>().objectToTarget = manche.colorSelection[colorIndex];
     }
