@@ -33,12 +33,16 @@ public class ObjectDetection : MonoBehaviour
         if (other.CompareTag("Viseur"))
         {
             if(canTarget == true)
-            {
+            {            
                 canTarget = false;
                 //Debug.Log("an object is target");
                 //Debug.Log("je peux plus target");
                 gameObject.GetComponentInParent<TargetableObject>().objectTargeted = gameObject;
-                StartCoroutine(LoadBar());
+                
+                if(SimonGameManager.sgm.itsNotDisplayPhase == true)
+                {
+                    StartCoroutine(LoadBar());
+                }
             }            
         }        
     }

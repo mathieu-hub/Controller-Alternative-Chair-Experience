@@ -19,6 +19,7 @@ public class SimonGameManager : MonoBehaviour
     [Header("DISPLAY")]
     public int displayIndex;
     public GameObject displayPosition;
+    public bool itsNotDisplayPhase = true;
     [SerializeField] private List<GameObject> spawnedColor;
 
     [Header("TIME")]
@@ -99,8 +100,11 @@ public class SimonGameManager : MonoBehaviour
     }
     IEnumerator StartDisplayColor()
     {
+        itsNotDisplayPhase = false; 
+
         MancheCompositor manche = round[roundIndex];
 
+        gameObject.GetComponentInChildren<TargetableObject>().objectToTarget = manche.colorSelection[colorIndex]; 
         yield return new WaitForSeconds(manche.rateDisplay);
         Debug.Log("instanciation couleur");
         var _colorDisplay = Instantiate(round[roundIndex].colorDisplay[displayIndex], displayPosition.transform.position, displayPosition.transform.rotation, player01.transform);
@@ -130,6 +134,7 @@ public class SimonGameManager : MonoBehaviour
 
     void StartRound()
     {
+        itsNotDisplayPhase = true;
         roundInProgress = true;
         round[roundIndex].displayIsPassed = true;
     }

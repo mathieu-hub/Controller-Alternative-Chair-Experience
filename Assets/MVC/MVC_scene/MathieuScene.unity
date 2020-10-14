@@ -1750,7 +1750,7 @@ MonoBehaviour:
     - {fileID: 3048322399501171382}
     - {fileID: 5794710578704552996}
     maximumIndexColor: 2
-    timeToComplete: 30
+    timeToComplete: 5
   - colorDisplay:
     - {fileID: 7064462686965839992, guid: f1b71555af44d244b9e660f7b062ef95, type: 3}
     - {fileID: 1673275454010023575, guid: b6fd3b974def1c344a580b9649acd19b, type: 3}
