@@ -128,15 +128,8 @@ public class SimonGameManager : MonoBehaviour
 
     void StartRound()
     {
-        MancheCompositor manche = round[roundIndex];
-
         roundInProgress = true;
         round[roundIndex].displayIsPassed = true;
-
-        if (colorIndex == manche.maximumIndexColor)
-        {
-            EndRound();
-        }
     }
 
     public void ChangeColorSelection()
@@ -146,6 +139,11 @@ public class SimonGameManager : MonoBehaviour
         Debug.Log("CHANGEMENT DE COULEUR");
         colorIndex++;
         gameObject.GetComponentInChildren<TargetableObject>().objectToTarget = manche.colorSelection[colorIndex];
+
+        if (colorIndex == manche.maximumIndexColor)
+        {
+            EndRound();
+        }
     }
     void EndRound()
     {

@@ -1703,7 +1703,6 @@ MonoBehaviour:
   - colorDisplay:
     - {fileID: 6871654937383387211, guid: 969416221567f5843b6152e49a9b27c1, type: 3}
     - {fileID: 5831636637009597349, guid: e92b694b0940eb748b44775442c67484, type: 3}
-    - {fileID: 7064462686965839992, guid: 66393e5732c023245921062afcac3f76, type: 3}
     displayPositions:
     - {fileID: 1078363824}
     - {fileID: 1320420291}
@@ -1711,8 +1710,8 @@ MonoBehaviour:
     - {fileID: 931143708}
     - {fileID: 1535237625}
     - {fileID: 1494740388}
-    maximumIndexDisplay: 3
-    rateDisplay: 2
+    maximumIndexDisplay: 2
+    rateDisplay: 3
     displayIsPassed: 0
     colorSelection:
     - {fileID: 3048322399501171382}
@@ -1731,7 +1730,7 @@ MonoBehaviour:
     - {fileID: 1535237625}
     - {fileID: 1494740388}
     maximumIndexDisplay: 3
-    rateDisplay: 4
+    rateDisplay: 3
     displayIsPassed: 0
     colorSelection:
     - {fileID: 374618414}
