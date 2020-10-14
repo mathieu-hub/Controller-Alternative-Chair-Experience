@@ -95,7 +95,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 398176668273066210}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bef313366fb9f3f4b87d9a9cb5cbdaec, type: 3}
+  m_Script: {fileID: 11500000, guid: d325223906f00f349ba7b4680511f985, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: 2777146684823067635}
@@ -103,13 +103,15 @@ MonoBehaviour:
   lr: {fileID: 1824553171}
   playerNumberTarget: 1
   speedImpulse: 2
+  baseSpeedImpulse: 0
   speedAttraction: 0.3
+  baseSpeedAttraction: 0
   speedImpulseLimit: 8.5
   speedAttractionLimit: 3.5
   colorGradient1:
     serializedVersion: 2
     key0: {r: 1, g: 1, b: 1, a: 1}
-    key1: {r: 0, g: 0.22687483, b: 1, a: 1}
+    key1: {r: 0.04705906, g: 0, b: 1, a: 1}
     key2: {r: 0, g: 0, b: 0, a: 0}
     key3: {r: 0, g: 0, b: 0, a: 0}
     key4: {r: 0, g: 0, b: 0, a: 0}
@@ -164,6 +166,7 @@ MonoBehaviour:
     m_Mode: 0
     m_NumColorKeys: 2
     m_NumAlphaKeys: 2
+  otherBallsAnimators: []
 --- !u!50 &2777146684823067635
 Rigidbody2D:
   serializedVersion: 4
@@ -211,7 +214,7 @@ Animator:
   m_GameObject: {fileID: 398176668273066210}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: c520eda8681764f4ba96814bbd22aae7, type: 2}
+  m_Controller: {fileID: 9100000, guid: f368d5b6e7a419141bed9580332777e7, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
