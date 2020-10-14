@@ -12,14 +12,204 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e41e64af807bbd48aeb40c5dab7ed6b, type: 3}
   m_Name: AkWwiseProjectData
   m_EditorClassIdentifier: 
-  AcousticTextureWwu: []
-  AuxBusWwu: []
-  BankWwu: []
-  EventWwu: []
-  RtpcWwu: []
-  StateWwu: []
-  SwitchWwu: []
-  TriggerWwu: []
-  ExpandedItems: []
+  AcousticTextureWwu:
+  - PhysicalPath: Virtual Acoustics\Default Work Unit.wwu
+    PathAndIcons:
+    - ElementName: Default Work Unit
+      ObjectType: 12
+    ParentPath: Default Work Unit
+    guid: aadb985c61fcb342a30d058bf964529a
+    GuidInternal: 
+    m_lastTime: -8585997026398367655
+    List: []
+  AuxBusWwu:
+  - PhysicalPath: Master-Mixer Hierarchy\Default Work Unit.wwu
+    PathAndIcons:
+    - ElementName: Default Work Unit
+      ObjectType: 12
+    ParentPath: Default Work Unit
+    guid: 8806b8eae7e4734e9d7e8ac04da89fc2
+    GuidInternal: 
+    m_lastTime: -8585997026398038666
+    List:
+    - name: Master Audio Bus
+      guid: d8a41415a61d2a41a17e75ca0c2149f3
+      id: 3803692087
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+      Path: Default Work Unit\Master Audio Bus
+  BankWwu:
+  - PhysicalPath: SoundBanks\Default Work Unit.wwu
+    PathAndIcons:
+    - ElementName: Default Work Unit
+      ObjectType: 12
+    ParentPath: Default Work Unit
+    guid: e167b60ecaf05448977f1fd0005d69b3
+    GuidInternal: 
+    m_lastTime: -8585990055341639644
+    List:
+    - name: Main
+      guid: d6fdf3f0a3d0314cb8580e04a7903baf
+      id: 3161908922
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Main
+        ObjectType: 7
+      Path: Default Work Unit\Main
+  EventWwu:
+  - PhysicalPath: Events\Default Work Unit.wwu
+    PathAndIcons:
+    - ElementName: Default Work Unit
+      ObjectType: 12
+    ParentPath: Default Work Unit
+    guid: 63fca03b1bca7f458a9b9587479179c6
+    GuidInternal: 
+    m_lastTime: -8585990055341746542
+    List:
+    - name: Apparition_Bouton_Start
+      guid: f76bac494a7fa247943cfada4062ce59
+      id: 1481623233
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Apparition_Bouton_Start
+        ObjectType: 3
+      Path: Default Work Unit\Apparition_Bouton_Start
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Chargement_Couleur
+      guid: f458462a62492e49adaeba01affe9b98
+      id: 1497809451
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Chargement_Couleur
+        ObjectType: 3
+      Path: Default Work Unit\Chargement_Couleur
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Couleur_Bleu
+      guid: 2e17990e57ff0341b9bab7f13a98aec1
+      id: 2968600283
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Couleur_Bleu
+        ObjectType: 3
+      Path: Default Work Unit\Couleur_Bleu
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Couleur_Jaune
+      guid: 0d2eed7f9f7596448bcaa7327fe3e07b
+      id: 755896502
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Couleur_Jaune
+        ObjectType: 3
+      Path: Default Work Unit\Couleur_Jaune
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Couleur_Rouge
+      guid: aa9ae83d61b2d441bfbfb3561f1f61b4
+      id: 2716105235
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Couleur_Rouge
+        ObjectType: 3
+      Path: Default Work Unit\Couleur_Rouge
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Couleur_Verte
+      guid: 28542535d25e8047be6b032583d995e7
+      id: 4126544963
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Couleur_Verte
+        ObjectType: 3
+      Path: Default Work Unit\Couleur_Verte
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Echec_Couleur
+      guid: 9e38d870beb6ad4e94942f367d2fa4fc
+      id: 889509821
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Echec_Couleur
+        ObjectType: 3
+      Path: Default Work Unit\Echec_Couleur
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Validation_Couleur
+      guid: 8b29d0ec9ee578469c4f276b7e70fb83
+      id: 52329734
+      PathAndIcons:
+      - ElementName: Default Work Unit
+        ObjectType: 12
+      - ElementName: Validation_Couleur
+        ObjectType: 3
+      Path: Default Work Unit\Validation_Couleur
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+  RtpcWwu:
+  - PhysicalPath: Game Parameters\Default Work Unit.wwu
+    PathAndIcons:
+    - ElementName: Default Work Unit
+      ObjectType: 12
+    ParentPath: Default Work Unit
+    guid: 5941dd2dd73aff44890d40d6b3fb44c5
+    GuidInternal: 
+    m_lastTime: -8585997026399245440
+    List: []
+  StateWwu:
+  - PhysicalPath: States\Default Work Unit.wwu
+    PathAndIcons:
+    - ElementName: Default Work Unit
+      ObjectType: 12
+    ParentPath: Default Work Unit
+    guid: 658e85b7201a8349955d4ebdbe69f65f
+    GuidInternal: 
+    m_lastTime: -8585997026399584547
+    List: []
+  SwitchWwu:
+  - PhysicalPath: Switches\Default Work Unit.wwu
+    PathAndIcons:
+    - ElementName: Default Work Unit
+      ObjectType: 12
+    ParentPath: Default Work Unit
+    guid: bf93eb2b08132147871f2213d7423806
+    GuidInternal: 
+    m_lastTime: -8585997026398487454
+    List: []
+  TriggerWwu:
+  - PhysicalPath: Triggers\Default Work Unit.wwu
+    PathAndIcons:
+    - ElementName: Default Work Unit
+      ObjectType: 12
+    ParentPath: Default Work Unit
+    guid: 09e2c42852477648afaca7f86f0d08fb
+    GuidInternal: 
+    m_lastTime: -8585997026398726833
+    List: []
+  ExpandedItems:
+  - /Controller-Alternative-Chair-Experience_WwiseProject
+  - /Controller-Alternative-Chair-Experience_WwiseProject/SoundBanks
+  - /Controller-Alternative-Chair-Experience_WwiseProject/SoundBanks/Default Work
+    Unit
   autoPopulateEnabled: 1
   CurrentPluginConfig: 

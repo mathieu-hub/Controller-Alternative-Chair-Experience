@@ -1,6 +1,20 @@
 Event	ID	Name			Wwise Object Path	Notes
-	1351382450	Play_Explosion_Fusee			\Default Work Unit\Play_Explosion_Fusee	
+	52329734	Validation_Couleur			\Default Work Unit\Validation_Couleur	
+	755896502	Couleur_Jaune			\Default Work Unit\Couleur_Jaune	
+	889509821	Echec_Couleur			\Default Work Unit\Echec_Couleur	
+	1481623233	Apparition_Bouton_Start			\Default Work Unit\Apparition_Bouton_Start	
+	1497809451	Chargement_Couleur			\Default Work Unit\Chargement_Couleur	
+	2716105235	Couleur_Rouge			\Default Work Unit\Couleur_Rouge	
+	2968600283	Couleur_Bleu			\Default Work Unit\Couleur_Bleu	
+	4126544963	Couleur_Verte			\Default Work Unit\Couleur_Verte	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
-	730268299	Explosion fusée	C:\Users\theov\Desktop\Rubika\Année 3\Projet CTRL Alt\Controller-Alternative-Chair-Experience\Controller-Alternative-Chair-Experience_WwiseProject\.cache\Mac\SFX\Explosion fusée_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Explosion fusée		505240
+	104925976	simon_bleu	C:\Users\theov\Desktop\Rubika\Année 3\Projet CTRL Alt\Controller-Alternative-Chair-Experience\Controller-Alternative-Chair-Experience_WwiseProject\.cache\Mac\SFX\simon_bleu_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\simon_bleu		96512
+	259941188	Echec	C:\Users\theov\Desktop\Rubika\Année 3\Projet CTRL Alt\Controller-Alternative-Chair-Experience\Controller-Alternative-Chair-Experience_WwiseProject\.cache\Mac\SFX\Echec_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Echec		51172
+	278557087	simon_jaune	C:\Users\theov\Desktop\Rubika\Année 3\Projet CTRL Alt\Controller-Alternative-Chair-Experience\Controller-Alternative-Chair-Experience_WwiseProject\.cache\Mac\SFX\simon_jaune_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\simon_jaune		96136
+	422310762	Apparition Bouton Start Simon	C:\Users\theov\Desktop\Rubika\Année 3\Projet CTRL Alt\Controller-Alternative-Chair-Experience\Controller-Alternative-Chair-Experience_WwiseProject\.cache\Mac\SFX\Apparition Bouton Start Simon_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Apparition Bouton Start Simon		431740
+	671331922	Chargement	C:\Users\theov\Desktop\Rubika\Année 3\Projet CTRL Alt\Controller-Alternative-Chair-Experience\Controller-Alternative-Chair-Experience_WwiseProject\.cache\Mac\SFX\Chargement_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Chargement		96030
+	712975549	simon_vert	C:\Users\theov\Desktop\Rubika\Année 3\Projet CTRL Alt\Controller-Alternative-Chair-Experience\Controller-Alternative-Chair-Experience_WwiseProject\.cache\Mac\SFX\simon_vert_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\simon_vert		96508
+	759512309	simon_rouge	C:\Users\theov\Desktop\Rubika\Année 3\Projet CTRL Alt\Controller-Alternative-Chair-Experience\Controller-Alternative-Chair-Experience_WwiseProject\.cache\Mac\SFX\simon_rouge_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\simon_rouge		96140
+	909866962	Validation	C:\Users\theov\Desktop\Rubika\Année 3\Projet CTRL Alt\Controller-Alternative-Chair-Experience\Controller-Alternative-Chair-Experience_WwiseProject\.cache\Mac\SFX\Validation_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Validation		70450
 

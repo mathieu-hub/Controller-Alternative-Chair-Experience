@@ -16,16 +16,72 @@
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="3161908922" Language="SFX" Hash="3512620673">
+		<SoundBank Id="3161908922" Language="SFX" Hash="2563027523">
 			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<IncludedEvents>
-				<Event Id="1351382450" Name="Play_Explosion_Fusee" ObjectPath="\Events\Default Work Unit\Play_Explosion_Fusee" DurationType="OneShot" DurationMin="2.631125" DurationMax="2.631125">
+				<Event Id="1481623233" Name="Apparition_Bouton_Start" ObjectPath="\Events\Default Work Unit\Apparition_Bouton_Start" DurationType="OneShot" DurationMin="2.248312" DurationMax="2.248312">
 					<IncludedMemoryFiles>
-						<File Id="730268299" Language="SFX">
-							<ShortName>Explosion fusée.wav</ShortName>
-							<Path>SFX\Explosion fusée_10C4C929.wem</Path>
+						<File Id="422310762" Language="SFX">
+							<ShortName>Apparition Bouton Start Simon.wav</ShortName>
+							<Path>SFX\Apparition Bouton Start Simon_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1497809451" Name="Chargement_Couleur" ObjectPath="\Events\Default Work Unit\Chargement_Couleur" DurationType="OneShot" DurationMin="0.999646" DurationMax="0.999646">
+					<IncludedMemoryFiles>
+						<File Id="671331922" Language="SFX">
+							<ShortName>Chargement.wav</ShortName>
+							<Path>SFX\Chargement_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2968600283" Name="Couleur_Bleu" ObjectPath="\Events\Default Work Unit\Couleur_Bleu" DurationType="OneShot" DurationMin="0.502333" DurationMax="0.502333">
+					<IncludedMemoryFiles>
+						<File Id="104925976" Language="SFX">
+							<ShortName>simon_bleu.wav</ShortName>
+							<Path>SFX\simon_bleu_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="755896502" Name="Couleur_Jaune" ObjectPath="\Events\Default Work Unit\Couleur_Jaune" DurationType="OneShot" DurationMin="0.500375" DurationMax="0.500375">
+					<IncludedMemoryFiles>
+						<File Id="278557087" Language="SFX">
+							<ShortName>simon_jaune.wav</ShortName>
+							<Path>SFX\simon_jaune_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2716105235" Name="Couleur_Rouge" ObjectPath="\Events\Default Work Unit\Couleur_Rouge" DurationType="OneShot" DurationMin="0.500396" DurationMax="0.500396">
+					<IncludedMemoryFiles>
+						<File Id="759512309" Language="SFX">
+							<ShortName>simon_rouge.wav</ShortName>
+							<Path>SFX\simon_rouge_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="4126544963" Name="Couleur_Verte" ObjectPath="\Events\Default Work Unit\Couleur_Verte" DurationType="OneShot" DurationMin="0.502312" DurationMax="0.502312">
+					<IncludedMemoryFiles>
+						<File Id="712975549" Language="SFX">
+							<ShortName>simon_vert.wav</ShortName>
+							<Path>SFX\simon_vert_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="889509821" Name="Echec_Couleur" ObjectPath="\Events\Default Work Unit\Echec_Couleur" DurationType="OneShot" DurationMin="0.532375" DurationMax="0.532375">
+					<IncludedMemoryFiles>
+						<File Id="259941188" Language="SFX">
+							<ShortName>Echec.wav</ShortName>
+							<Path>SFX\Echec_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="52329734" Name="Validation_Couleur" ObjectPath="\Events\Default Work Unit\Validation_Couleur" DurationType="OneShot" DurationMin="1.099781" DurationMax="1.099781">
+					<IncludedMemoryFiles>
+						<File Id="909866962" Language="SFX">
+							<ShortName>Validation.wav</ShortName>
+							<Path>SFX\Validation_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
