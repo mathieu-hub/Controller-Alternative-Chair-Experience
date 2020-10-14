@@ -26,9 +26,11 @@ public class SimonGameManager : MonoBehaviour
 
     [Header("PLAYER 01")]
     public int pointPlayer01;
+    public GameObject player01;
 
     [Header("PLAYER 02")]
     public int pointPlayer02;
+    //public GameObject player02;
 
     [Header("OBJECT TRIGGER")]
     public GameObject redObject;
@@ -101,7 +103,7 @@ public class SimonGameManager : MonoBehaviour
 
         yield return new WaitForSeconds(manche.rateDisplay);
         Debug.Log("instanciation couleur");
-        var _colorDisplay = Instantiate(round[roundIndex].colorDisplay[displayIndex], displayPosition.transform.position, displayPosition.transform.rotation);
+        var _colorDisplay = Instantiate(round[roundIndex].colorDisplay[displayIndex], displayPosition.transform.position, displayPosition.transform.rotation, player01.transform);
         spawnedColor.Add(_colorDisplay);
         yield return new WaitForSeconds(0.8f);
         displayIndex++;
@@ -145,6 +147,14 @@ public class SimonGameManager : MonoBehaviour
             EndRound();
         }
     }
+
+    public void ReinitialiseColorProgression()
+    {
+        Debug.Log("RETRY COLOR PROGRESSION");
+        colorIndex = 0;
+        gameObject.GetComponentInChildren<TargetableObject>().objectToTarget = manche.colorSelection[colorIndex];
+    }
+
     void EndRound()
     {
         Debug.Log("roundIsFinish");

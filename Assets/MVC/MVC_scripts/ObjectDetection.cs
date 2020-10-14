@@ -85,9 +85,15 @@ public class ObjectDetection : MonoBehaviour
             yield return new WaitForSeconds(0.3f);
             resultBar.SetActive(false);
 
+            //Passer à la couleur suivante ou Recommencer sa composition
             if (!isStartButton && resultBar == validationBar) 
             {
                 SimonGameManager.sgm.ChangeColorSelection();
+            }
+
+            if (!isStartButton && resultBar == refuseBar)
+            {
+                SimonGameManager.sgm.ReinitialiseColorProgression();
             }
 
             if (isStartButton)

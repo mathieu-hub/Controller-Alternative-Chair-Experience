@@ -1779,6 +1779,7 @@ MonoBehaviour:
   spawnedColor: []
   countdown: 0
   pointPlayer01: 0
+  player01: {fileID: 2986528878967185123}
   pointPlayer02: 0
   redObject: {fileID: 374618414}
   greenObject: {fileID: 5794710578704552996}
