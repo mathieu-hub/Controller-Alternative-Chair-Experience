@@ -6,16 +6,26 @@
 				<SoundBank Name="Main" ID="{F0F3FDD6-D0A3-4C31-B858-0E04A7903BAF}">
 					<ObjectInclusionList>
 						<ObjectRef Name="Couleur_Bleu" ID="{0E99172E-FF57-4103-B9BA-B7F13A98AEC1}" WorkUnitID="{3BA0FC63-CA1B-457F-8A9B-9587479179C6}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Meteorite" ID="{E0BDB824-1D50-4164-82E0-E33845356D59}" WorkUnitID="{3BA0FC63-CA1B-457F-8A9B-9587479179C6}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Balle_Mur" ID="{2674B260-E76F-418E-A4B1-8CD6D4219CBA}" WorkUnitID="{3BA0FC63-CA1B-457F-8A9B-9587479179C6}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Couleur_Rouge" ID="{3DE89AAA-B261-41D4-BFBF-B3561F1F61B4}" WorkUnitID="{3BA0FC63-CA1B-457F-8A9B-9587479179C6}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Balle_Bouclier" ID="{AEA2861F-DF31-4284-9DA3-61348F7388E3}" WorkUnitID="{3BA0FC63-CA1B-457F-8A9B-9587479179C6}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Renforcement" ID="{CE4C2D73-F992-4407-A6D1-AF0663FF1240}" WorkUnitID="{3BA0FC63-CA1B-457F-8A9B-9587479179C6}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Activation_Bouclier" ID="{192AE1EF-30BE-4463-A0B9-F3393803851A}" WorkUnitID="{3BA0FC63-CA1B-457F-8A9B-9587479179C6}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Couleur_Jaune" ID="{7FED2E0D-759F-4496-8BCA-A7327FE3E07B}" WorkUnitID="{3BA0FC63-CA1B-457F-8A9B-9587479179C6}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Applaudissements" ID="{F93E3825-F112-4661-B5C9-566070CA4D89}" WorkUnitID="{3BA0FC63-CA1B-457F-8A9B-9587479179C6}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Validation_Couleur" ID="{ECD0298B-E59E-4678-9C4F-276B7E70FB83}" WorkUnitID="{3BA0FC63-CA1B-457F-8A9B-9587479179C6}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Couleur_Verte" ID="{35255428-5ED2-4780-BE6B-032583D995E7}" WorkUnitID="{3BA0FC63-CA1B-457F-8A9B-9587479179C6}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Apparition_Bouton_Start" ID="{49AC6BF7-7F4A-47A2-943C-FADA4062CE59}" WorkUnitID="{3BA0FC63-CA1B-457F-8A9B-9587479179C6}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Asteroide_Explosion" ID="{B0AB642C-35D2-47B1-A9DB-B226512E58C9}" WorkUnitID="{3BA0FC63-CA1B-457F-8A9B-9587479179C6}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Passage_Espace" ID="{7766C376-2E45-4800-A4AD-EE661768FF4B}" WorkUnitID="{3BA0FC63-CA1B-457F-8A9B-9587479179C6}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Chargement_Couleur" ID="{2A4658F4-4962-492E-ADAE-BA01AFFE9B98}" WorkUnitID="{3BA0FC63-CA1B-457F-8A9B-9587479179C6}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Casse_Brique" ID="{244886E8-F8BB-49F5-BD6D-B847841E89CF}" WorkUnitID="{3BA0FC63-CA1B-457F-8A9B-9587479179C6}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Dedoublement_Balle" ID="{0D7AA349-9627-49FD-9000-F6C2819411C1}" WorkUnitID="{3BA0FC63-CA1B-457F-8A9B-9587479179C6}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Accelerateur_Balle" ID="{15AA8F23-C3C4-4AB8-9EB0-32C9E9FD4D47}" WorkUnitID="{3BA0FC63-CA1B-457F-8A9B-9587479179C6}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Extralife" ID="{6A686D65-3405-4CF3-99CA-AF73FB561F07}" WorkUnitID="{3BA0FC63-CA1B-457F-8A9B-9587479179C6}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Apparition_Balle" ID="{8190D1E6-3B19-4D47-8375-C2B3E2B0E32E}" WorkUnitID="{3BA0FC63-CA1B-457F-8A9B-9587479179C6}" Origin="Manual" Filter="7"/>
+						<ObjectRef Name="Extrabouclier" ID="{EDB30715-3253-4D84-9551-BE8E5F27EE7D}" WorkUnitID="{3BA0FC63-CA1B-457F-8A9B-9587479179C6}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Echec_Couleur" ID="{70D8389E-B6BE-4EAD-9494-2F367D2FA4FC}" WorkUnitID="{3BA0FC63-CA1B-457F-8A9B-9587479179C6}" Origin="Manual" Filter="7"/>
 						<ObjectRef Name="Explosion_Vaisseau" ID="{17007919-3438-4F92-A479-74D16648904C}" WorkUnitID="{3BA0FC63-CA1B-457F-8A9B-9587479179C6}" Origin="Manual" Filter="7"/>
 					</ObjectInclusionList>

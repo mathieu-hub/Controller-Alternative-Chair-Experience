@@ -16,11 +16,27 @@
 			<ShortName>Init</ShortName>
 			<Path>Init.bnk</Path>
 		</SoundBank>
-		<SoundBank Id="3161908922" Language="SFX" Hash="2486129190">
+		<SoundBank Id="3161908922" Language="SFX" Hash="80160332">
 			<ObjectPath>\SoundBanks\Default Work Unit\Main</ObjectPath>
 			<ShortName>Main</ShortName>
 			<Path>Main.bnk</Path>
 			<IncludedEvents>
+				<Event Id="2784276230" Name="Accelerateur_Balle" ObjectPath="\Events\Default Work Unit\Accelerateur_Balle" DurationType="OneShot" DurationMin="2.373729" DurationMax="2.373729">
+					<IncludedMemoryFiles>
+						<File Id="680196245" Language="SFX">
+							<ShortName>Accélérateur de balle.wav</ShortName>
+							<Path>SFX\Accélérateur de balle_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2479721409" Name="Activation_Bouclier" ObjectPath="\Events\Default Work Unit\Activation_Bouclier" DurationType="OneShot" DurationMin="0.859146" DurationMax="0.859146">
+					<IncludedMemoryFiles>
+						<File Id="85608078" Language="SFX">
+							<ShortName>Activation bouclier.wav</ShortName>
+							<Path>SFX\Activation bouclier_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
 				<Event Id="4140142695" Name="Apparition_Balle" ObjectPath="\Events\Default Work Unit\Apparition_Balle" DurationType="OneShot" DurationMin="1.001438" DurationMax="1.001438">
 					<IncludedMemoryFiles>
 						<File Id="699773342" Language="SFX">
@@ -34,6 +50,18 @@
 						<File Id="422310762" Language="SFX">
 							<ShortName>Apparition Bouton Start Simon.wav</ShortName>
 							<Path>SFX\Apparition Bouton Start Simon_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="408738931" Name="Applaudissements" ObjectPath="\Events\Default Work Unit\Applaudissements" DurationType="OneShot" DurationMin="3.996667" DurationMax="3.996667">
+					<IncludedMemoryFiles>
+						<File Id="719485267" Language="SFX">
+							<ShortName>Moyen applaudissement.wav</ShortName>
+							<Path>SFX\Moyen applaudissement_10C4C929.wem</Path>
+						</File>
+						<File Id="964994985" Language="SFX">
+							<ShortName>Grand applaudissement.wav</ShortName>
+							<Path>SFX\Grand applaudissement_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -58,6 +86,14 @@
 						<File Id="890710776" Language="SFX">
 							<ShortName>Balle qui frappe un mur.wav</ShortName>
 							<Path>SFX\Balle qui frappe un mur_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="302720131" Name="Casse_Brique" ObjectPath="\Events\Default Work Unit\Casse_Brique" DurationType="OneShot" DurationMin="3.564417" DurationMax="3.564417">
+					<IncludedMemoryFiles>
+						<File Id="704512819" Language="SFX">
+							<ShortName>Casse Brique.wav</ShortName>
+							<Path>SFX\Casse Brique_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
@@ -101,6 +137,14 @@
 						</File>
 					</IncludedMemoryFiles>
 				</Event>
+				<Event Id="281341014" Name="Dedoublement_Balle" ObjectPath="\Events\Default Work Unit\Dedoublement_Balle" DurationType="OneShot" DurationMin="0.728792" DurationMax="0.728792">
+					<IncludedMemoryFiles>
+						<File Id="504799810" Language="SFX">
+							<ShortName>Dédoublement de balle.wav</ShortName>
+							<Path>SFX\Dédoublement de balle_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
 				<Event Id="889509821" Name="Echec_Couleur" ObjectPath="\Events\Default Work Unit\Echec_Couleur" DurationType="OneShot" DurationMin="0.532375" DurationMax="0.532375">
 					<IncludedMemoryFiles>
 						<File Id="259941188" Language="SFX">
@@ -114,6 +158,46 @@
 						<File Id="40175533" Language="SFX">
 							<ShortName>Explosion vaisseau.wav</ShortName>
 							<Path>SFX\Explosion vaisseau_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3159408660" Name="Extrabouclier" ObjectPath="\Events\Default Work Unit\Extrabouclier" DurationType="OneShot" DurationMin="0.801063" DurationMax="0.801063">
+					<IncludedMemoryFiles>
+						<File Id="392743447" Language="SFX">
+							<ShortName>Extra Bouclier.wav</ShortName>
+							<Path>SFX\Extra Bouclier_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="2800659499" Name="Extralife" ObjectPath="\Events\Default Work Unit\Extralife" DurationType="OneShot" DurationMin="1.169875" DurationMax="1.169875">
+					<IncludedMemoryFiles>
+						<File Id="523309754" Language="SFX">
+							<ShortName>Extra Life.wav</ShortName>
+							<Path>SFX\Extra Life_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="13339075" Name="Meteorite" ObjectPath="\Events\Default Work Unit\Meteorite" DurationType="OneShot" DurationMin="4.018729" DurationMax="4.018729">
+					<IncludedMemoryFiles>
+						<File Id="442197870" Language="SFX">
+							<ShortName>Metéorite.wav</ShortName>
+							<Path>SFX\Metéorite_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="1893821891" Name="Passage_Espace" ObjectPath="\Events\Default Work Unit\Passage_Espace" DurationType="OneShot" DurationMin="12.695500" DurationMax="12.695500">
+					<IncludedMemoryFiles>
+						<File Id="960432950" Language="SFX">
+							<ShortName>Passage dans l'espace.wav</ShortName>
+							<Path>SFX\Passage dans l'espace_10C4C929.wem</Path>
+						</File>
+					</IncludedMemoryFiles>
+				</Event>
+				<Event Id="3890001413" Name="Renforcement" ObjectPath="\Events\Default Work Unit\Renforcement" DurationType="OneShot" DurationMin="1.945229" DurationMax="1.945229">
+					<IncludedMemoryFiles>
+						<File Id="826122971" Language="SFX">
+							<ShortName>Renforcement.wav</ShortName>
+							<Path>SFX\Renforcement_10C4C929.wem</Path>
 						</File>
 					</IncludedMemoryFiles>
 				</Event>

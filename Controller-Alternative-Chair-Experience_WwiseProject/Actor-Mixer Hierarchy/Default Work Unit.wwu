@@ -51,6 +51,13 @@
 								<MediaID ID="671331922"/>
 							</MediaIDList>
 						</AudioFileSource>
+						<AudioFileSource Name="Accélérateur de balle" ID="{EA89190F-5C87-4A0E-8B7A-221C24B4A650}">
+							<Language>SFX</Language>
+							<AudioFile>Accélérateur de balle.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="680196245"/>
+							</MediaIDList>
+						</AudioFileSource>
 					</ChildrenList>
 					<ActiveSourceList>
 						<ActiveSource Name="Chargement" ID="{09AA3340-F1D2-4495-9241-8C06C60D9B8C}" Platform="Linked"/>
@@ -249,6 +256,20 @@
 								<MediaID ID="699773342"/>
 							</MediaIDList>
 						</AudioFileSource>
+						<AudioFileSource Name="Accélérateur de balle" ID="{E366A505-23EE-4F95-B02F-4951CB505FF1}">
+							<Language>SFX</Language>
+							<AudioFile>Accélérateur de balle.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="680196245"/>
+							</MediaIDList>
+						</AudioFileSource>
+						<AudioFileSource Name="Activation bouclier" ID="{180E228B-996F-41CE-9EAB-7B65817D8C38}">
+							<Language>SFX</Language>
+							<AudioFile>Activation bouclier.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="85608078"/>
+							</MediaIDList>
+						</AudioFileSource>
 					</ChildrenList>
 					<ActiveSourceList>
 						<ActiveSource Name="Balle qui apparait" ID="{89FF56B8-FD7C-4672-BEDF-AEC4951ADC8E}" Platform="Linked"/>
@@ -269,6 +290,69 @@
 							<AudioFile>Balle qui frappe un mur.wav</AudioFile>
 							<MediaIDList>
 								<MediaID ID="890710776"/>
+							</MediaIDList>
+						</AudioFileSource>
+						<AudioFileSource Name="Accélérateur de balle" ID="{5F07C414-E4A2-4768-84A0-1674A35F5CDA}">
+							<Language>SFX</Language>
+							<AudioFile>Accélérateur de balle.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="680196245"/>
+							</MediaIDList>
+						</AudioFileSource>
+						<AudioFileSource Name="Activation bouclier" ID="{944771C9-8ABB-4823-B6E4-6E062FB73DE4}">
+							<Language>SFX</Language>
+							<AudioFile>Activation bouclier.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="85608078"/>
+							</MediaIDList>
+						</AudioFileSource>
+						<AudioFileSource Name="Casse Brique" ID="{266A1A7F-52EA-450A-952B-E39331C95C00}">
+							<Language>SFX</Language>
+							<AudioFile>Casse Brique.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="704512819"/>
+							</MediaIDList>
+						</AudioFileSource>
+						<AudioFileSource Name="Dédoublement de balle" ID="{BD942F1C-88E4-41C4-82D0-A1170F0905A1}">
+							<Language>SFX</Language>
+							<AudioFile>Dédoublement de balle.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="504799810"/>
+							</MediaIDList>
+						</AudioFileSource>
+						<AudioFileSource Name="Extra Bouclier" ID="{EB515FA8-10B7-4422-AFC8-C00869A9481E}">
+							<Language>SFX</Language>
+							<AudioFile>Extra Bouclier.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="392743447"/>
+							</MediaIDList>
+						</AudioFileSource>
+						<AudioFileSource Name="Extra Life" ID="{2E984111-9FD0-45A0-BA70-488170DC30C1}">
+							<Language>SFX</Language>
+							<AudioFile>Extra Life.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="523309754"/>
+							</MediaIDList>
+						</AudioFileSource>
+						<AudioFileSource Name="Metéorite" ID="{1AA67A86-71DB-4D18-B431-03833F62324F}">
+							<Language>SFX</Language>
+							<AudioFile>Metéorite.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="442197870"/>
+							</MediaIDList>
+						</AudioFileSource>
+						<AudioFileSource Name="Passage dans l'espace" ID="{06106517-0ECE-4D9C-9B31-40234DE83455}">
+							<Language>SFX</Language>
+							<AudioFile>Passage dans l'espace.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="960432950"/>
+							</MediaIDList>
+						</AudioFileSource>
+						<AudioFileSource Name="Renforcement" ID="{09603579-AAC9-4085-9DC5-B5ECA56FAC55}">
+							<Language>SFX</Language>
+							<AudioFile>Renforcement.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="826122971"/>
 							</MediaIDList>
 						</AudioFileSource>
 					</ChildrenList>
@@ -293,9 +377,314 @@
 								<MediaID ID="40175533"/>
 							</MediaIDList>
 						</AudioFileSource>
+						<AudioFileSource Name="Accélérateur de balle" ID="{F02A18F4-C10F-42E1-8CAE-0480DB164876}">
+							<Language>SFX</Language>
+							<AudioFile>Accélérateur de balle.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="680196245"/>
+							</MediaIDList>
+						</AudioFileSource>
+						<AudioFileSource Name="Activation bouclier" ID="{F1C5E043-0017-4E15-95AC-D588C771CD29}">
+							<Language>SFX</Language>
+							<AudioFile>Activation bouclier.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="85608078"/>
+							</MediaIDList>
+						</AudioFileSource>
+						<AudioFileSource Name="Casse Brique" ID="{2B409C5F-E2F5-41AE-8DA1-63764AF140FC}">
+							<Language>SFX</Language>
+							<AudioFile>Casse Brique.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="704512819"/>
+							</MediaIDList>
+						</AudioFileSource>
+						<AudioFileSource Name="Dédoublement de balle" ID="{52D99BB4-030B-4856-A457-B02841019F85}">
+							<Language>SFX</Language>
+							<AudioFile>Dédoublement de balle.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="504799810"/>
+							</MediaIDList>
+						</AudioFileSource>
+						<AudioFileSource Name="Extra Bouclier" ID="{75FDA3D6-44C2-4394-BAA2-810343B71665}">
+							<Language>SFX</Language>
+							<AudioFile>Extra Bouclier.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="392743447"/>
+							</MediaIDList>
+						</AudioFileSource>
+						<AudioFileSource Name="Extra Life" ID="{B85FA490-256A-4002-969E-464F09A6BF75}">
+							<Language>SFX</Language>
+							<AudioFile>Extra Life.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="523309754"/>
+							</MediaIDList>
+						</AudioFileSource>
+						<AudioFileSource Name="Metéorite" ID="{08FC1F7C-F542-4824-877D-4570AD860408}">
+							<Language>SFX</Language>
+							<AudioFile>Metéorite.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="442197870"/>
+							</MediaIDList>
+						</AudioFileSource>
+						<AudioFileSource Name="Passage dans l'espace" ID="{F8086A30-ACCF-472F-B408-1F57F6F0AF33}">
+							<Language>SFX</Language>
+							<AudioFile>Passage dans l'espace.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="960432950"/>
+							</MediaIDList>
+						</AudioFileSource>
+						<AudioFileSource Name="Renforcement" ID="{13B39A5C-287A-4F03-89ED-67C6DEABA7AE}">
+							<Language>SFX</Language>
+							<AudioFile>Renforcement.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="826122971"/>
+							</MediaIDList>
+						</AudioFileSource>
 					</ChildrenList>
 					<ActiveSourceList>
 						<ActiveSource Name="Explosion vaisseau" ID="{9D0F0BA5-2487-4BE0-9235-EC921DE8F927}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="Grand applaudissement" ID="{0A05310A-F85B-46C4-A0B9-8EDCFC38E266}" ShortID="668915123">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0730BCD2-FD4C-4C47-9A4F-F87DEAF13A83}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EAB80688-E4E7-4E73-9D7E-8AC04DA89FC2}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Grand applaudissement" ID="{CB4DE5B5-CAD9-473E-8F2E-BCD37CD10717}">
+							<Language>SFX</Language>
+							<AudioFile>Grand applaudissement.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="964994985"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="Grand applaudissement" ID="{CB4DE5B5-CAD9-473E-8F2E-BCD37CD10717}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="Moyen applaudissement" ID="{043FF0B4-975B-48A9-8C13-F5E2D598ADD3}" ShortID="443668445">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0730BCD2-FD4C-4C47-9A4F-F87DEAF13A83}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EAB80688-E4E7-4E73-9D7E-8AC04DA89FC2}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Moyen applaudissement" ID="{41EF6718-3D80-4222-B778-C7A0F60639EF}">
+							<Language>SFX</Language>
+							<AudioFile>Moyen applaudissement.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="719485267"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="Moyen applaudissement" ID="{41EF6718-3D80-4222-B778-C7A0F60639EF}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="Accélérateur de balle" ID="{C7D5BBCA-E929-43F9-B712-8941E887D3E5}" ShortID="464937532">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0730BCD2-FD4C-4C47-9A4F-F87DEAF13A83}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EAB80688-E4E7-4E73-9D7E-8AC04DA89FC2}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Accélérateur de balle" ID="{6C8C55F6-C1E3-4EE1-8E79-7023D87BBA3A}">
+							<Language>SFX</Language>
+							<AudioFile>Accélérateur de balle.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="680196245"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="Accélérateur de balle" ID="{6C8C55F6-C1E3-4EE1-8E79-7023D87BBA3A}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="Activation bouclier" ID="{884E52D8-9289-4E15-AAFA-98F52DA09271}" ShortID="737681620">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0730BCD2-FD4C-4C47-9A4F-F87DEAF13A83}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EAB80688-E4E7-4E73-9D7E-8AC04DA89FC2}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Activation bouclier" ID="{9E5906D2-5FBE-4275-9A13-8AD187BF8A08}">
+							<Language>SFX</Language>
+							<AudioFile>Activation bouclier.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="85608078"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="Activation bouclier" ID="{9E5906D2-5FBE-4275-9A13-8AD187BF8A08}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="Casse Brique" ID="{9D9296E4-9C71-4D81-A09A-ED7D28C053E8}" ShortID="636220026">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0730BCD2-FD4C-4C47-9A4F-F87DEAF13A83}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EAB80688-E4E7-4E73-9D7E-8AC04DA89FC2}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Casse Brique" ID="{70D988DC-214A-4668-9F32-3A1539F6FA47}">
+							<Language>SFX</Language>
+							<AudioFile>Casse Brique.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="704512819"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="Casse Brique" ID="{70D988DC-214A-4668-9F32-3A1539F6FA47}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="Dédoublement de balle" ID="{9CA142F3-E130-419B-9C83-386A8DA9C6D1}" ShortID="350613484">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0730BCD2-FD4C-4C47-9A4F-F87DEAF13A83}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EAB80688-E4E7-4E73-9D7E-8AC04DA89FC2}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Dédoublement de balle" ID="{9DB49A7B-61AA-4A5D-9BF2-619A75D5B0FD}">
+							<Language>SFX</Language>
+							<AudioFile>Dédoublement de balle.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="504799810"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="Dédoublement de balle" ID="{9DB49A7B-61AA-4A5D-9BF2-619A75D5B0FD}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="Extra Bouclier" ID="{8F5871C2-076B-4CA5-9455-DC382D3B9564}" ShortID="936409101">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0730BCD2-FD4C-4C47-9A4F-F87DEAF13A83}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EAB80688-E4E7-4E73-9D7E-8AC04DA89FC2}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Extra Bouclier" ID="{409FAC1E-700D-4CC3-801C-C94F6028D897}">
+							<Language>SFX</Language>
+							<AudioFile>Extra Bouclier.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="392743447"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="Extra Bouclier" ID="{409FAC1E-700D-4CC3-801C-C94F6028D897}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="Extra Life" ID="{ED9554F6-061F-434D-B846-7A49A675328D}" ShortID="340878622">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0730BCD2-FD4C-4C47-9A4F-F87DEAF13A83}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EAB80688-E4E7-4E73-9D7E-8AC04DA89FC2}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Extra Life" ID="{2C012415-6BF0-45BE-B218-795A15699BE1}">
+							<Language>SFX</Language>
+							<AudioFile>Extra Life.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="523309754"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="Extra Life" ID="{2C012415-6BF0-45BE-B218-795A15699BE1}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="Metéorite" ID="{33CE2F00-5A5B-43B4-A928-DFB711DA2C9B}" ShortID="47585635">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0730BCD2-FD4C-4C47-9A4F-F87DEAF13A83}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EAB80688-E4E7-4E73-9D7E-8AC04DA89FC2}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Metéorite" ID="{C6087F5C-B7F5-410B-922B-320803075A00}">
+							<Language>SFX</Language>
+							<AudioFile>Metéorite.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="442197870"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="Metéorite" ID="{C6087F5C-B7F5-410B-922B-320803075A00}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="Passage dans l'espace" ID="{97E21F35-34B8-4641-A217-C163394C383E}" ShortID="333826641">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0730BCD2-FD4C-4C47-9A4F-F87DEAF13A83}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EAB80688-E4E7-4E73-9D7E-8AC04DA89FC2}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Passage dans l'espace" ID="{2D3DB1DB-88BB-4F64-AEED-297ACD46F908}">
+							<Language>SFX</Language>
+							<AudioFile>Passage dans l'espace.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="960432950"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="Passage dans l'espace" ID="{2D3DB1DB-88BB-4F64-AEED-297ACD46F908}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+				<Sound Name="Renforcement" ID="{013BD976-6DC8-46C6-B37A-65247B8C6A79}" ShortID="803032273">
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{0730BCD2-FD4C-4C47-9A4F-F87DEAF13A83}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{EAB80688-E4E7-4E73-9D7E-8AC04DA89FC2}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Renforcement" ID="{DAD07513-3658-400D-96CB-4575F50FBCAA}">
+							<Language>SFX</Language>
+							<AudioFile>Renforcement.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="826122971"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="Renforcement" ID="{DAD07513-3658-400D-96CB-4575F50FBCAA}" Platform="Linked"/>
 					</ActiveSourceList>
 				</Sound>
 			</ChildrenList>

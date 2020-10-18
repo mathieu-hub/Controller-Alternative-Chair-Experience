@@ -146,6 +146,123 @@
 						</Action>
 					</ChildrenList>
 				</Event>
+				<Event Name="Applaudissements" ID="{F93E3825-F112-4661-B5C9-566070CA4D89}">
+					<ChildrenList>
+						<Action Name="" ID="{F88580C2-55D6-4866-BB73-4A0E5FF74457}" ShortID="866286873">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Grand applaudissement" ID="{0A05310A-F85B-46C4-A0B9-8EDCFC38E266}" WorkUnitID="{26210975-1902-49CC-99EA-CCBAE576F01F}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+						<Action Name="" ID="{99332C06-8129-4D89-8016-8A1A41CE3DFB}" ShortID="1054383338">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Moyen applaudissement" ID="{043FF0B4-975B-48A9-8C13-F5E2D598ADD3}" WorkUnitID="{26210975-1902-49CC-99EA-CCBAE576F01F}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Accelerateur_Balle" ID="{15AA8F23-C3C4-4AB8-9EB0-32C9E9FD4D47}">
+					<ChildrenList>
+						<Action Name="" ID="{E00938DC-E806-44CA-8233-C985AE193133}" ShortID="263538437">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Accélérateur de balle" ID="{C7D5BBCA-E929-43F9-B712-8941E887D3E5}" WorkUnitID="{26210975-1902-49CC-99EA-CCBAE576F01F}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Activation_Bouclier" ID="{192AE1EF-30BE-4463-A0B9-F3393803851A}">
+					<ChildrenList>
+						<Action Name="" ID="{32F256CE-B8C0-4A90-98C2-EE8BD7698739}" ShortID="400291307">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Activation bouclier" ID="{884E52D8-9289-4E15-AAFA-98F52DA09271}" WorkUnitID="{26210975-1902-49CC-99EA-CCBAE576F01F}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Casse_Brique" ID="{244886E8-F8BB-49F5-BD6D-B847841E89CF}">
+					<ChildrenList>
+						<Action Name="" ID="{5C84E68B-6F42-47C6-9FE1-18C58DE26607}" ShortID="911940661">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Casse Brique" ID="{9D9296E4-9C71-4D81-A09A-ED7D28C053E8}" WorkUnitID="{26210975-1902-49CC-99EA-CCBAE576F01F}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Dedoublement_Balle" ID="{0D7AA349-9627-49FD-9000-F6C2819411C1}">
+					<ChildrenList>
+						<Action Name="" ID="{2E960F39-8F5C-4619-A9DF-96A8E261744F}" ShortID="404031133">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Dédoublement de balle" ID="{9CA142F3-E130-419B-9C83-386A8DA9C6D1}" WorkUnitID="{26210975-1902-49CC-99EA-CCBAE576F01F}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Extrabouclier" ID="{EDB30715-3253-4D84-9551-BE8E5F27EE7D}">
+					<ChildrenList>
+						<Action Name="" ID="{0503BEDD-0ED0-4948-99EE-EF7184F9361C}" ShortID="740025033">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Extra Bouclier" ID="{8F5871C2-076B-4CA5-9455-DC382D3B9564}" WorkUnitID="{26210975-1902-49CC-99EA-CCBAE576F01F}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Extralife" ID="{6A686D65-3405-4CF3-99CA-AF73FB561F07}">
+					<ChildrenList>
+						<Action Name="" ID="{71A9AC0A-E904-4797-AE3D-BB1303EE179B}" ShortID="1053485588">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Extra Life" ID="{ED9554F6-061F-434D-B846-7A49A675328D}" WorkUnitID="{26210975-1902-49CC-99EA-CCBAE576F01F}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Meteorite" ID="{E0BDB824-1D50-4164-82E0-E33845356D59}">
+					<ChildrenList>
+						<Action Name="" ID="{A141ED2F-50E4-4E85-8C05-FB464385396D}" ShortID="75271606">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Metéorite" ID="{33CE2F00-5A5B-43B4-A928-DFB711DA2C9B}" WorkUnitID="{26210975-1902-49CC-99EA-CCBAE576F01F}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Passage_Espace" ID="{7766C376-2E45-4800-A4AD-EE661768FF4B}">
+					<ChildrenList>
+						<Action Name="" ID="{D06B39FE-600E-403A-B4A7-EC1B50241E72}" ShortID="506159476">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Passage dans l'espace" ID="{97E21F35-34B8-4641-A217-C163394C383E}" WorkUnitID="{26210975-1902-49CC-99EA-CCBAE576F01F}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Renforcement" ID="{CE4C2D73-F992-4407-A6D1-AF0663FF1240}">
+					<ChildrenList>
+						<Action Name="" ID="{5E9E7417-C2E2-420E-9D6B-CE27F2E1A02A}" ShortID="616475037">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Renforcement" ID="{013BD976-6DC8-46C6-B37A-65247B8C6A79}" WorkUnitID="{26210975-1902-49CC-99EA-CCBAE576F01F}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

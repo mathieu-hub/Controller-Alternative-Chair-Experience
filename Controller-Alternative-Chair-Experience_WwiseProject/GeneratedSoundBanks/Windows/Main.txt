@@ -1,30 +1,51 @@
 Event	ID	Name			Wwise Object Path	Notes
+	13339075	Meteorite			\Default Work Unit\Meteorite	
 	52329734	Validation_Couleur			\Default Work Unit\Validation_Couleur	
 	119072111	Asteroide_Explosion			\Default Work Unit\Asteroide_Explosion	
+	281341014	Dedoublement_Balle			\Default Work Unit\Dedoublement_Balle	
+	302720131	Casse_Brique			\Default Work Unit\Casse_Brique	
+	408738931	Applaudissements			\Default Work Unit\Applaudissements	
 	755896502	Couleur_Jaune			\Default Work Unit\Couleur_Jaune	
 	889509821	Echec_Couleur			\Default Work Unit\Echec_Couleur	
 	1481623233	Apparition_Bouton_Start			\Default Work Unit\Apparition_Bouton_Start	
 	1497809451	Chargement_Couleur			\Default Work Unit\Chargement_Couleur	
+	1893821891	Passage_Espace			\Default Work Unit\Passage_Espace	
 	2087612307	Balle_Bouclier			\Default Work Unit\Balle_Bouclier	
+	2479721409	Activation_Bouclier			\Default Work Unit\Activation_Bouclier	
 	2716105235	Couleur_Rouge			\Default Work Unit\Couleur_Rouge	
+	2784276230	Accelerateur_Balle			\Default Work Unit\Accelerateur_Balle	
+	2800659499	Extralife			\Default Work Unit\Extralife	
 	2968600283	Couleur_Bleu			\Default Work Unit\Couleur_Bleu	
+	3159408660	Extrabouclier			\Default Work Unit\Extrabouclier	
 	3198498328	Explosion_Vaisseau			\Default Work Unit\Explosion_Vaisseau	
+	3890001413	Renforcement			\Default Work Unit\Renforcement	
 	3963030902	Balle_Mur			\Default Work Unit\Balle_Mur	
 	4126544963	Couleur_Verte			\Default Work Unit\Couleur_Verte	
 	4140142695	Apparition_Balle			\Default Work Unit\Apparition_Balle	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
 	40175533	Explosion vaisseau	C:\Users\theov\Desktop\Rubika\Année 3\Projet CTRL Alt\Controller-Alternative-Chair-Experience\Controller-Alternative-Chair-Experience_WwiseProject\.cache\Windows\SFX\Explosion vaisseau_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Explosion vaisseau		165320
+	85608078	Activation bouclier	C:\Users\theov\Desktop\Rubika\Année 3\Projet CTRL Alt\Controller-Alternative-Chair-Experience\Controller-Alternative-Chair-Experience_WwiseProject\.cache\Windows\SFX\Activation bouclier_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Activation bouclier		165020
 	104925976	simon_bleu	C:\Users\theov\Desktop\Rubika\Année 3\Projet CTRL Alt\Controller-Alternative-Chair-Experience\Controller-Alternative-Chair-Experience_WwiseProject\.cache\Windows\SFX\simon_bleu_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\simon_bleu		96512
 	140509224	Asteroide qui explose	C:\Users\theov\Desktop\Rubika\Année 3\Projet CTRL Alt\Controller-Alternative-Chair-Experience\Controller-Alternative-Chair-Experience_WwiseProject\.cache\Windows\SFX\Asteroide qui explose_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Asteroide qui explose		145852
 	259941188	Echec	C:\Users\theov\Desktop\Rubika\Année 3\Projet CTRL Alt\Controller-Alternative-Chair-Experience\Controller-Alternative-Chair-Experience_WwiseProject\.cache\Windows\SFX\Echec_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Echec		51172
 	278557087	simon_jaune	C:\Users\theov\Desktop\Rubika\Année 3\Projet CTRL Alt\Controller-Alternative-Chair-Experience\Controller-Alternative-Chair-Experience_WwiseProject\.cache\Windows\SFX\simon_jaune_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\simon_jaune		96136
+	392743447	Extra Bouclier	C:\Users\theov\Desktop\Rubika\Année 3\Projet CTRL Alt\Controller-Alternative-Chair-Experience\Controller-Alternative-Chair-Experience_WwiseProject\.cache\Windows\SFX\Extra Bouclier_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Extra Bouclier		153868
 	422310762	Apparition Bouton Start Simon	C:\Users\theov\Desktop\Rubika\Année 3\Projet CTRL Alt\Controller-Alternative-Chair-Experience\Controller-Alternative-Chair-Experience_WwiseProject\.cache\Windows\SFX\Apparition Bouton Start Simon_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Apparition Bouton Start Simon		431740
+	442197870	Metéorite	C:\Users\theov\Desktop\Rubika\Année 3\Projet CTRL Alt\Controller-Alternative-Chair-Experience\Controller-Alternative-Chair-Experience_WwiseProject\.cache\Windows\SFX\Metéorite_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Metéorite		771660
+	504799810	Dédoublement de balle	C:\Users\theov\Desktop\Rubika\Année 3\Projet CTRL Alt\Controller-Alternative-Chair-Experience\Controller-Alternative-Chair-Experience_WwiseProject\.cache\Windows\SFX\Dédoublement de balle_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Dédoublement de balle		139992
+	523309754	Extra Life	C:\Users\theov\Desktop\Rubika\Année 3\Projet CTRL Alt\Controller-Alternative-Chair-Experience\Controller-Alternative-Chair-Experience_WwiseProject\.cache\Windows\SFX\Extra Life_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Extra Life		224680
 	671331922	Chargement	C:\Users\theov\Desktop\Rubika\Année 3\Projet CTRL Alt\Controller-Alternative-Chair-Experience\Controller-Alternative-Chair-Experience_WwiseProject\.cache\Windows\SFX\Chargement_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Chargement		96030
+	680196245	Accélérateur de balle	C:\Users\theov\Desktop\Rubika\Année 3\Projet CTRL Alt\Controller-Alternative-Chair-Experience\Controller-Alternative-Chair-Experience_WwiseProject\.cache\Windows\SFX\Accélérateur de balle_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Accélérateur de balle		455820
 	699773342	Balle qui apparait	C:\Users\theov\Desktop\Rubika\Année 3\Projet CTRL Alt\Controller-Alternative-Chair-Experience\Controller-Alternative-Chair-Experience_WwiseProject\.cache\Windows\SFX\Balle qui apparait_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Balle qui apparait		192340
+	704512819	Casse Brique	C:\Users\theov\Desktop\Rubika\Année 3\Projet CTRL Alt\Controller-Alternative-Chair-Experience\Controller-Alternative-Chair-Experience_WwiseProject\.cache\Windows\SFX\Casse Brique_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Casse Brique		684432
 	712975549	simon_vert	C:\Users\theov\Desktop\Rubika\Année 3\Projet CTRL Alt\Controller-Alternative-Chair-Experience\Controller-Alternative-Chair-Experience_WwiseProject\.cache\Windows\SFX\simon_vert_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\simon_vert		96508
+	719485267	Moyen applaudissement	C:\Users\theov\Desktop\Rubika\Année 3\Projet CTRL Alt\Controller-Alternative-Chair-Experience\Controller-Alternative-Chair-Experience_WwiseProject\.cache\Windows\SFX\Moyen applaudissement_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Moyen applaudissement		671280
 	759512309	simon_rouge	C:\Users\theov\Desktop\Rubika\Année 3\Projet CTRL Alt\Controller-Alternative-Chair-Experience\Controller-Alternative-Chair-Experience_WwiseProject\.cache\Windows\SFX\simon_rouge_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\simon_rouge		96140
+	826122971	Renforcement	C:\Users\theov\Desktop\Rubika\Année 3\Projet CTRL Alt\Controller-Alternative-Chair-Experience\Controller-Alternative-Chair-Experience_WwiseProject\.cache\Windows\SFX\Renforcement_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Renforcement		373548
 	890710776	Balle qui frappe un mur	C:\Users\theov\Desktop\Rubika\Année 3\Projet CTRL Alt\Controller-Alternative-Chair-Experience\Controller-Alternative-Chair-Experience_WwiseProject\.cache\Windows\SFX\Balle qui frappe un mur_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Balle qui frappe un mur		67360
 	909866962	Validation	C:\Users\theov\Desktop\Rubika\Année 3\Projet CTRL Alt\Controller-Alternative-Chair-Experience\Controller-Alternative-Chair-Experience_WwiseProject\.cache\Windows\SFX\Validation_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Validation		70450
 	923811716	Balle contre bouclier	C:\Users\theov\Desktop\Rubika\Année 3\Projet CTRL Alt\Controller-Alternative-Chair-Experience\Controller-Alternative-Chair-Experience_WwiseProject\.cache\Windows\SFX\Balle contre bouclier_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Balle contre bouclier		69568
+	960432950	Passage dans l'espace	C:\Users\theov\Desktop\Rubika\Année 3\Projet CTRL Alt\Controller-Alternative-Chair-Experience\Controller-Alternative-Chair-Experience_WwiseProject\.cache\Windows\SFX\Passage dans l'espace_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Passage dans l'espace		2437600
+	964994985	Grand applaudissement	C:\Users\theov\Desktop\Rubika\Année 3\Projet CTRL Alt\Controller-Alternative-Chair-Experience\Controller-Alternative-Chair-Experience_WwiseProject\.cache\Windows\SFX\Grand applaudissement_10C4C929.wem		\Actor-Mixer Hierarchy\Default Work Unit\Grand applaudissement		767424
 
