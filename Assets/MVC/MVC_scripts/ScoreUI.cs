@@ -3,19 +3,19 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class ScoreP1 : MonoBehaviour
+public class ScoreUI : MonoBehaviour
 {
-    Text scorePlayer01;
+    Text scoreUI;
 
     // Start is called before the first frame update
     void Start()
     {
-        scorePlayer01 = GetComponent<Text>();
+        scoreUI = GetComponent<Text>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        scorePlayer01.text = SimonGameManager.sgm.pointPlayer01 + "-";
+        scoreUI.text = SimonGameManager.sgm.pointPlayer01 + " - ";
     }
 }

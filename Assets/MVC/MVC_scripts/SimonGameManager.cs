@@ -14,7 +14,7 @@ public class SimonGameManager : MonoBehaviour
 
     [Header("ROUND")]
     public int roundIndex;
-    public static int roundUI;
+    public int roundUI;
     public bool roundInProgress = false;
     public int colorIndex;
 
