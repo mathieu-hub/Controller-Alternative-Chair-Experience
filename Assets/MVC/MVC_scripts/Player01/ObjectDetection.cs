@@ -29,11 +29,6 @@ public class ObjectDetection : MonoBehaviour
         {
             resultBar = refuseBar;
         }
-
-        Debug.Log("HEY HO");
-        //SimonGameManager.sgm.gameIsStarted = true;
-        //SimonGameManager.sgm.StartGame();
-        
     }
 
     private void OnTriggerEnter(Collider other)
@@ -111,6 +106,7 @@ public class ObjectDetection : MonoBehaviour
             if (isStartButton)
             {
                 SimonGameManager.sgm.readyToStart++;
+                SimonGameManager.sgm.CheckToStart();
                 gameObject.SetActive(false);
             }
         }        

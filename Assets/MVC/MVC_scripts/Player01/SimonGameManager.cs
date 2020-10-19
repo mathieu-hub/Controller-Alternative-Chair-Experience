@@ -122,6 +122,20 @@ public class SimonGameManager : MonoBehaviour
         manche = round[roundIndex];
 
         displayPosition = manche.displayPositions[displayIndex];
+
+        
+    }
+
+    public void CheckToStart()
+    {
+        if(readyToStart == 2)
+        {
+            Debug.Log("HEY HO");
+            gameIsStarted = true;
+            StartGame();
+            P2SimonGameManager.p2sgm.gameIsStarted = true;
+            P2SimonGameManager.p2sgm.StartGame();
+        }
     }
 
     public void StartGame()

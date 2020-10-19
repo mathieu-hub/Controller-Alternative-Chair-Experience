@@ -30,9 +30,7 @@ public class P2ObjectDetection : MonoBehaviour
             resultBar = refuseBar;
         }
 
-        Debug.Log("HEY HO 02");
-        //P2SimonGameManager.p2sgm.gameIsStarted = true;
-        //P2SimonGameManager.p2sgm.StartGame();
+         
     }
 
     private void OnTriggerEnter(Collider other)
@@ -110,6 +108,7 @@ public class P2ObjectDetection : MonoBehaviour
             if (isStartButton)
             {
                 SimonGameManager.sgm.readyToStart++;
+                SimonGameManager.sgm.CheckToStart();
                 gameObject.SetActive(false);
             }
         }
