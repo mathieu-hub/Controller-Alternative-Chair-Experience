@@ -8,6 +8,7 @@ TagManager:
   - BallePong
   - TargetableObject
   - Viseur
+  - P2Viseur
   layers:
   - Default
   - TransparentFX

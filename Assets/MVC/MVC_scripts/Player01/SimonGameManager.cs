@@ -2,8 +2,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
-using Vuforia;
 
 public class SimonGameManager : MonoBehaviour
 {
@@ -44,9 +42,7 @@ public class SimonGameManager : MonoBehaviour
 
     [Header("UI")]
     public GameObject scoreUI;
-    public GameObject scoreUI02;
     public GameObject roundUI;
-    public GameObject roundUI02;
 
 
 
@@ -108,9 +104,7 @@ public class SimonGameManager : MonoBehaviour
             timeBreak = 2;
             timeBreaking = false;
             scoreUI.SetActive(false);
-            scoreUI02.SetActive(false);
             roundUI.SetActive(false);
-            roundUI02.SetActive(false);
             StartCoroutine(StartDisplayColor());
         }
 
@@ -183,7 +177,7 @@ public class SimonGameManager : MonoBehaviour
             player01Win = true;
             pointPlayer01++;
 
-            if (player01Win /*&&player02Win*/)
+            if (player01Win && P2SimonGameManager.p2sgm.player02Win == true)
             {
                 EndRound();
             }
@@ -201,9 +195,7 @@ public class SimonGameManager : MonoBehaviour
     {
         timeBreaking = true;
         scoreUI.SetActive(true);
-        scoreUI02.SetActive(true);
         roundUI.SetActive(true);
-        roundUI02.SetActive(true);
     }
 
     void EndRound()

@@ -17,5 +17,4 @@ public class MancheCompositor
     public GameObject[] colorSelection;
     public int maximumIndexColor;
     public float timeToComplete;
-
 }

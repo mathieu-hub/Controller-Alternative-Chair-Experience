@@ -12,7 +12,6 @@ public class TargetableObject : MonoBehaviour
     private void Start()
     {
         objectTargeted = null;
-    }
-    
+    }    
 }
 
