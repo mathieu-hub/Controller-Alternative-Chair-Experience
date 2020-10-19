@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using Vuforia;
 
 public class SimonGameManager : MonoBehaviour
@@ -13,6 +14,7 @@ public class SimonGameManager : MonoBehaviour
 
     [Header("ROUND")]
     public int roundIndex;
+    public static int roundUI;
     public bool roundInProgress = false;
     public int colorIndex;
 
@@ -26,8 +28,9 @@ public class SimonGameManager : MonoBehaviour
     public float countdown;
 
     [Header("PLAYER 01")]
+    public GameObject player01;
     public int pointPlayer01;
-    public GameObject player01;    
+    public bool player01Win = false;
 
     [Header("OBJECT TRIGGER")]
     public GameObject redObject;
@@ -57,6 +60,8 @@ public class SimonGameManager : MonoBehaviour
         pointPlayer01 = 0;
 
         roundIndex = 0;
+        
+        roundUI = roundIndex += 1;
 
         Initialisation();
 
@@ -144,7 +149,13 @@ public class SimonGameManager : MonoBehaviour
 
         if (colorIndex == manche.maximumIndexColor)
         {
-            EndRound();
+            player01Win = true;
+            pointPlayer01++;
+
+            if (player01Win /*&&player02Win*/)
+            {
+                EndRound();
+            }
         }
     }
 
@@ -159,6 +170,7 @@ public class SimonGameManager : MonoBehaviour
     {
         Debug.Log("roundIsFinish");
         roundIndex++;
+        roundUI++;
         Initialisation();
         StartCoroutine(StartDisplayColor());
     }
