@@ -30,14 +30,9 @@ public class P2ObjectDetection : MonoBehaviour
             resultBar = refuseBar;
         }
 
-        if (SimonGameManager.sgm.startConfirmed == true && P2SimonGameManager.p2sgm.startConfirmed == true)
-        {
-            if (!gameIsStart)
-            {
-                gameIsStart = true;
-                P2SimonGameManager.p2sgm.StartGame();
-            }
-        }
+        Debug.Log("HEY HO 02");
+        //P2SimonGameManager.p2sgm.gameIsStarted = true;
+        //P2SimonGameManager.p2sgm.StartGame();
     }
 
     private void OnTriggerEnter(Collider other)
@@ -114,7 +109,7 @@ public class P2ObjectDetection : MonoBehaviour
 
             if (isStartButton)
             {
-                P2SimonGameManager.p2sgm.startConfirmed = true;
+                SimonGameManager.sgm.readyToStart++;
                 gameObject.SetActive(false);
             }
         }

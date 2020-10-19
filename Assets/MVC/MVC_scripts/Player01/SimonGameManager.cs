@@ -31,7 +31,8 @@ public class SimonGameManager : MonoBehaviour
     public GameObject player01;
     public int pointPlayer01;
     public bool player01Win = false;
-    public bool startConfirmed = false;
+    public bool gameIsStarted = false;
+    public int readyToStart;
 
 
     [Header("OBJECT TRIGGER")]
@@ -57,7 +58,7 @@ public class SimonGameManager : MonoBehaviour
         roundInProgress = false;
         round[roundIndex].displayIsPassed = false;
 
-        if (startConfirmed)
+        if (gameIsStarted)
         {
             DisplayUI();
         }
@@ -70,6 +71,8 @@ public class SimonGameManager : MonoBehaviour
         MancheCompositor manche = round[roundIndex];
 
         spawnedColor = new List<GameObject>();
+
+        readyToStart = 0;
 
         pointPlayer01 = 0;
 

@@ -28,16 +28,12 @@ public class ObjectDetection : MonoBehaviour
         else
         {
             resultBar = refuseBar;
-        }   
-        
-        if(SimonGameManager.sgm.startConfirmed == true && P2SimonGameManager.p2sgm.startConfirmed == true)
-        {
-            if (!gameIsStart)
-            {
-                gameIsStart = true;
-                SimonGameManager.sgm.StartGame();
-            }
         }
+
+        Debug.Log("HEY HO");
+        //SimonGameManager.sgm.gameIsStarted = true;
+        //SimonGameManager.sgm.StartGame();
+        
     }
 
     private void OnTriggerEnter(Collider other)
@@ -114,7 +110,7 @@ public class ObjectDetection : MonoBehaviour
 
             if (isStartButton)
             {
-                SimonGameManager.sgm.startConfirmed = true;
+                SimonGameManager.sgm.readyToStart++;
                 gameObject.SetActive(false);
             }
         }        

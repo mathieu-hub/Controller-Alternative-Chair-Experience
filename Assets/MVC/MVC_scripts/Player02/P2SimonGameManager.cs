@@ -26,11 +26,11 @@ public class P2SimonGameManager : MonoBehaviour
     public float timeBreak;
     public bool timeBreaking = false;
 
-    [Header("PLAYER 01")]
+    [Header("PLAYER 02")]
     public GameObject player02;
     public int pointPlayer02;
     public bool player02Win = false;
-    public bool startConfirmed = false;
+    public bool gameIsStarted = false;
 
 
     [Header("OBJECT TRIGGER")]
@@ -56,7 +56,7 @@ public class P2SimonGameManager : MonoBehaviour
         roundInProgress = false;
         round[roundIndex].displayIsPassed = false;
 
-        if (startConfirmed)
+        if (gameIsStarted)
         {
             DisplayUI();
         }
