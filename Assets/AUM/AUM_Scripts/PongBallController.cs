@@ -12,8 +12,8 @@ public class PongBallController : MonoBehaviour
 
     public int playerNumberTarget;
 
-    Transform playerTarget;
-    Transform nonPlayerTarget;
+    [HideInInspector] public PScripts playerTarget;
+    [HideInInspector] public PScripts nonPlayerTarget;
 
     public float speedImpulse;
     [HideInInspector] public float baseSpeedImpulse;
@@ -44,15 +44,15 @@ public class PongBallController : MonoBehaviour
         if (baseSpeedAttraction == 0)
             baseSpeedAttraction = speedAttraction;
 
-        playerTarget = GameObject.Find("Player" + playerNumberTarget).transform;
+        playerTarget = GameObject.Find("Player" + playerNumberTarget).GetComponent<PScripts>();
 
         if(playerNumberTarget == 1)
         {
-            nonPlayerTarget = GameObject.Find("Player2").transform;
+            nonPlayerTarget = GameObject.Find("Player2").GetComponent<PScripts>();
         }
         else
         {
-            nonPlayerTarget = GameObject.Find("Player1").transform;
+            nonPlayerTarget = GameObject.Find("Player1").GetComponent<PScripts>();
         }
 
         
@@ -64,7 +64,7 @@ public class PongBallController : MonoBehaviour
         {
             collision.gameObject.GetComponent<Animator>().SetTrigger("Bump");
 
-            rb.velocity = (((transform.position - playerTarget.position).normalized * 1f) + ((transform.position - collision.transform.position).normalized * 1f)).normalized * speedImpulse;
+            rb.velocity = (((transform.position - playerTarget.transform.position).normalized * 1f) + ((transform.position - collision.transform.position).normalized * 1f)).normalized * speedImpulse;
 
             nonPlayerTarget = playerTarget;
 
@@ -73,7 +73,6 @@ public class PongBallController : MonoBehaviour
                 playerNumberTarget = 2;
 
                 gameObject.layer = 10;
-
             }
             else
             {
@@ -82,15 +81,15 @@ public class PongBallController : MonoBehaviour
                 gameObject.layer = 9;
             }
 
-            playerTarget = GameObject.Find("Player" + playerNumberTarget).transform;
+            playerTarget = GameObject.Find("Player" + playerNumberTarget).GetComponent<PScripts>();
 
 
-            if (speedImpulse * 1.5f < speedImpulseLimit)
+            if (speedImpulse * 1.5f < speedImpulseLimit * PongManager.pm.levelNumb)
                 speedImpulse *= 1.5f;
             else
                 speedImpulse = speedImpulseLimit;
 
-            if (speedAttraction * 1.5f < speedAttractionLimit)
+            if (speedAttraction * 1.5f < speedAttractionLimit * PongManager.pm.levelNumb)
                 speedAttraction *= 1.5f;
             else
                 speedAttraction = speedAttractionLimit;
@@ -122,7 +121,7 @@ public class PongBallController : MonoBehaviour
     void Update()
     {
         if(stopped == false)
-            rb.AddForce( ( (playerTarget.position - transform.position).normalized  * speedAttraction) * Mathf.Max(1, 1 / (Vector3.Distance(playerTarget.position, transform.position)) / 5f) );
+            rb.AddForce( ( (playerTarget.transform.position - transform.position).normalized  * speedAttraction) * Mathf.Max(1, 1 / (Vector3.Distance(playerTarget.transform.position, transform.position)) / 5f) );
 
         lr.SetPosition(0, transform.position);
 
