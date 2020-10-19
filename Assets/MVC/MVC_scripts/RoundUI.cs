@@ -6,17 +6,17 @@ using UnityEngine.UI;
 
 public class RoundUI : MonoBehaviour
 {
-    Text roundUI;
+    Text roundText;
 
     // Start is called before the first frame update
     void Start()
     {
-        roundUI = GetComponent<Text>();
+        roundText = GetComponent<Text>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        roundUI.text = "Round " + SimonGameManager.sgm.roundUI;
+        roundText.text = "Round " + SimonGameManager.sgm.roundNumber;
     }
 }

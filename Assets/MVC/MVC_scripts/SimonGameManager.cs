@@ -14,7 +14,7 @@ public class SimonGameManager : MonoBehaviour
 
     [Header("ROUND")]
     public int roundIndex;
-    public int roundUI;
+    public int roundNumber;
     public bool roundInProgress = false;
     public int colorIndex;
 
@@ -26,11 +26,14 @@ public class SimonGameManager : MonoBehaviour
 
     [Header("TIME")]
     public float countdown;
+    public float timeBreak = 2;
+    public bool timeBreaking = false;
 
     [Header("PLAYER 01")]
     public GameObject player01;
     public int pointPlayer01;
     public bool player01Win = false;
+
 
     [Header("OBJECT TRIGGER")]
     public GameObject redObject;
@@ -38,6 +41,14 @@ public class SimonGameManager : MonoBehaviour
     public GameObject yellowObject;
     public GameObject blueObject;
     public GameObject startButton;
+
+    [Header("UI")]
+    public GameObject scoreUI;
+    public GameObject scoreUI02;
+    public GameObject roundUI;
+    public GameObject roundUI02;
+
+
 
     private MancheCompositor manche;
     void Initialisation()
@@ -47,6 +58,8 @@ public class SimonGameManager : MonoBehaviour
         countdown = round[roundIndex].timeToComplete;
         roundInProgress = false;
         round[roundIndex].displayIsPassed = false;
+        
+        DisplayUI();
     }
 
     private void Start()
@@ -61,7 +74,7 @@ public class SimonGameManager : MonoBehaviour
 
         roundIndex = 0;
         
-        roundUI = roundIndex += 1;
+        roundNumber = roundIndex += 1;
 
         Initialisation();
 
@@ -73,6 +86,7 @@ public class SimonGameManager : MonoBehaviour
 
     private void Update()
     {
+        //COUNTDOWN
         if (roundInProgress)
         {
             countdown -= Time.deltaTime;
@@ -81,6 +95,23 @@ public class SimonGameManager : MonoBehaviour
         if (countdown <= 0)
         {
             EndRound();
+        }
+
+        //TIMEBREAK
+        if (timeBreaking)
+        {
+            timeBreak -= Time.deltaTime;
+        }
+
+        if(timeBreak <= 0)
+        {
+            timeBreak = 2;
+            timeBreaking = false;
+            scoreUI.SetActive(false);
+            scoreUI02.SetActive(false);
+            roundUI.SetActive(false);
+            roundUI02.SetActive(false);
+            StartCoroutine(StartDisplayColor());
         }
 
         //Update de displayPosition
@@ -166,12 +197,21 @@ public class SimonGameManager : MonoBehaviour
         gameObject.GetComponentInChildren<TargetableObject>().objectToTarget = manche.colorSelection[colorIndex];
     }
 
+    void DisplayUI()
+    {
+        timeBreaking = true;
+        scoreUI.SetActive(true);
+        scoreUI02.SetActive(true);
+        roundUI.SetActive(true);
+        roundUI02.SetActive(true);
+    }
+
     void EndRound()
     {
         Debug.Log("roundIsFinish");
         roundIndex++;
-        roundUI++;
+        roundNumber++;
         Initialisation();
-        StartCoroutine(StartDisplayColor());
+        //StartCoroutine(StartDisplayColor());
     }
 }
