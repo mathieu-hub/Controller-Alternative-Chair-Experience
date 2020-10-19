@@ -373,7 +373,7 @@ MonoBehaviour:
   player02: {fileID: 1999558953}
   pointPlayer02: 0
   player02Win: 0
-  startConfirmed: 0
+  gameIsStarted: 0
   redObject: {fileID: 1141185420}
   greenObject: {fileID: 1853675491}
   yellowObject: {fileID: 1551429763}
@@ -4272,7 +4272,8 @@ MonoBehaviour:
   player01: {fileID: 2986528878967185123}
   pointPlayer01: 0
   player01Win: 0
-  startConfirmed: 0
+  gameIsStarted: 0
+  readyToStart: 0
   redObject: {fileID: 374618414}
   greenObject: {fileID: 5794710578704552996}
   yellowObject: {fileID: 3048322399501171382}
