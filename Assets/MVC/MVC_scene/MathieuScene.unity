@@ -918,7 +918,7 @@ GameObject:
   - component: {fileID: 277310867}
   - component: {fileID: 277310868}
   m_Layer: 0
-  m_Name: position 06
+  m_Name: P2 - position 06
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1393,7 +1393,7 @@ GameObject:
   - component: {fileID: 446513719}
   - component: {fileID: 446513718}
   m_Layer: 0
-  m_Name: Start Button 02
+  m_Name: 'P2 - Start Button '
   m_TagString: TargetableObject
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2297,7 +2297,7 @@ GameObject:
   - component: {fileID: 872259234}
   - component: {fileID: 872259235}
   m_Layer: 0
-  m_Name: position 04
+  m_Name: P2 - position 04
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2687,7 +2687,7 @@ GameObject:
   - component: {fileID: 1116774028}
   - component: {fileID: 1116774029}
   m_Layer: 0
-  m_Name: position 03
+  m_Name: P2 - position 03
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2932,7 +2932,7 @@ GameObject:
   - component: {fileID: 1141185423}
   - component: {fileID: 1141185422}
   m_Layer: 0
-  m_Name: Red Object 02
+  m_Name: 'P2 - Red Object '
   m_TagString: TargetableObject
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4449,7 +4449,7 @@ GameObject:
   - component: {fileID: 1551429766}
   - component: {fileID: 1551429765}
   m_Layer: 0
-  m_Name: Yellow Object 02
+  m_Name: 'P2 - Yellow Object '
   m_TagString: TargetableObject
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4904,7 +4904,7 @@ GameObject:
   - component: {fileID: 1682518965}
   - component: {fileID: 1682518964}
   m_Layer: 0
-  m_Name: Blue Object 02
+  m_Name: 'P2 - Blue Object '
   m_TagString: TargetableObject
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5016,7 +5016,7 @@ GameObject:
   - component: {fileID: 1691981486}
   - component: {fileID: 1691981487}
   m_Layer: 0
-  m_Name: position 05
+  m_Name: P2 - position 05
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5259,7 +5259,7 @@ GameObject:
   - component: {fileID: 1709198505}
   - component: {fileID: 1709198506}
   m_Layer: 0
-  m_Name: position 01
+  m_Name: P2 - position 01
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5421,7 +5421,7 @@ GameObject:
   - component: {fileID: 1766866485}
   - component: {fileID: 1766866486}
   m_Layer: 0
-  m_Name: position 02
+  m_Name: P2 - position 02
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5585,7 +5585,7 @@ GameObject:
   - component: {fileID: 1853675494}
   - component: {fileID: 1853675493}
   m_Layer: 0
-  m_Name: Green Object 02
+  m_Name: 'P2 - Green Object '
   m_TagString: TargetableObject
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
