@@ -23,13 +23,14 @@ public class P2SimonGameManager : MonoBehaviour
 
     [Header("TIME")]
     public float countdown;
-    public float timeBreak = 2;
+    public float timeBreak;
     public bool timeBreaking = false;
 
     [Header("PLAYER 01")]
     public GameObject player02;
     public int pointPlayer02;
     public bool player02Win = false;
+    public bool startConfirmed = false;
 
 
     [Header("OBJECT TRIGGER")]
@@ -48,13 +49,17 @@ public class P2SimonGameManager : MonoBehaviour
     private P2MancheCompositor manche;
     void Initialisation()
     {
+        timeBreak = 2;
         displayIndex = 0;
         colorIndex = 0;
         countdown = round[roundIndex].timeToComplete;
         roundInProgress = false;
         round[roundIndex].displayIsPassed = false;
 
-        DisplayUI();
+        if (startConfirmed)
+        {
+            DisplayUI();
+        }
     }
 
     private void Start()
@@ -100,6 +105,7 @@ public class P2SimonGameManager : MonoBehaviour
 
         if (timeBreak <= 0)
         {
+            Debug.Log("LET'S GO 02");
             timeBreak = 2;
             timeBreaking = false;
             scoreUI.SetActive(false);

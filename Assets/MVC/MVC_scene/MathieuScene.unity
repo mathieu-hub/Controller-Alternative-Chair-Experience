@@ -139,6 +139,7 @@ MonoBehaviour:
   resultBar: {fileID: 0}
   canTarget: 1
   isStartButton: 0
+  gameIsStart: 0
 --- !u!1 &19509794
 GameObject:
   m_ObjectHideFlags: 0
@@ -372,6 +373,7 @@ MonoBehaviour:
   player02: {fileID: 1999558953}
   pointPlayer02: 0
   player02Win: 0
+  startConfirmed: 0
   redObject: {fileID: 1141185420}
   greenObject: {fileID: 1853675491}
   yellowObject: {fileID: 1551429763}
@@ -637,6 +639,7 @@ MonoBehaviour:
   resultBar: {fileID: 0}
   canTarget: 1
   isStartButton: 1
+  gameIsStart: 0
 --- !u!135 &160517879
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -648,7 +651,7 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.18
+  m_Radius: 0.1
   m_Center: {x: 0.00000023841858, y: 0, z: -0.000000036478056}
 --- !u!212 &160517880
 SpriteRenderer:
@@ -1094,7 +1097,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &374618415
 Transform:
   m_ObjectHideFlags: 0
@@ -1420,15 +1423,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 446513716}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0edd6d938581002419aaf7952181c0c4, type: 3}
+  m_Script: {fileID: 11500000, guid: a8959cbfdb1e0634fa01f42c023d77db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bar: {fileID: 1839455371}
-  validationBar: {fileID: 2120370323}
-  refuseBar: {fileID: 1669452857}
+  bar: {fileID: 130450602}
+  validationBar: {fileID: 1948783087}
+  refuseBar: {fileID: 1431528999}
   resultBar: {fileID: 0}
   canTarget: 1
   isStartButton: 1
+  gameIsStart: 0
 --- !u!135 &446513719
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -1440,7 +1444,7 @@ SphereCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.18
+  m_Radius: 0.1
   m_Center: {x: 0.00000023841858, y: 0, z: -0.000000036478056}
 --- !u!212 &446513720
 SpriteRenderer:
@@ -1635,7 +1639,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 576840671}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 53a6871bf480a9e4dbe4590447137859, type: 3}
+  m_Script: {fileID: 11500000, guid: 80e25d2d1828ad2489d7ad174ef99ab5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   objectToTarget: {fileID: 0}
@@ -1986,7 +1990,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player01: 0
-  player02: 0
+  player02: 1
 --- !u!114 &733370275
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2937,7 +2941,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1141185421
 Transform:
   m_ObjectHideFlags: 0
@@ -2961,7 +2965,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1141185420}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0edd6d938581002419aaf7952181c0c4, type: 3}
+  m_Script: {fileID: 11500000, guid: a8959cbfdb1e0634fa01f42c023d77db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   bar: {fileID: 1215560280}
@@ -2970,6 +2974,7 @@ MonoBehaviour:
   resultBar: {fileID: 0}
   canTarget: 1
   isStartButton: 0
+  gameIsStart: 0
 --- !u!135 &1141185423
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -3402,7 +3407,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d8c55771279338429b58a3f3d74db0d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player01: 0
+  player01: 1
   player02: 0
 --- !u!1 &1304530508
 GameObject:
@@ -4267,6 +4272,7 @@ MonoBehaviour:
   player01: {fileID: 2986528878967185123}
   pointPlayer01: 0
   player01Win: 0
+  startConfirmed: 0
   redObject: {fileID: 374618414}
   greenObject: {fileID: 5794710578704552996}
   yellowObject: {fileID: 3048322399501171382}
@@ -4454,7 +4460,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1551429764
 Transform:
   m_ObjectHideFlags: 0
@@ -4478,7 +4484,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1551429763}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0edd6d938581002419aaf7952181c0c4, type: 3}
+  m_Script: {fileID: 11500000, guid: a8959cbfdb1e0634fa01f42c023d77db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   bar: {fileID: 1406746716}
@@ -4487,6 +4493,7 @@ MonoBehaviour:
   resultBar: {fileID: 0}
   canTarget: 1
   isStartButton: 0
+  gameIsStart: 0
 --- !u!135 &1551429766
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -4909,7 +4916,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1682518963
 Transform:
   m_ObjectHideFlags: 0
@@ -4933,7 +4940,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1682518962}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0edd6d938581002419aaf7952181c0c4, type: 3}
+  m_Script: {fileID: 11500000, guid: a8959cbfdb1e0634fa01f42c023d77db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   bar: {fileID: 1004960232}
@@ -4942,6 +4949,7 @@ MonoBehaviour:
   resultBar: {fileID: 0}
   canTarget: 1
   isStartButton: 0
+  gameIsStart: 0
 --- !u!135 &1682518965
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -5590,7 +5598,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1853675492
 Transform:
   m_ObjectHideFlags: 0
@@ -5614,7 +5622,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1853675491}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0edd6d938581002419aaf7952181c0c4, type: 3}
+  m_Script: {fileID: 11500000, guid: a8959cbfdb1e0634fa01f42c023d77db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   bar: {fileID: 1239026283}
@@ -5623,6 +5631,7 @@ MonoBehaviour:
   resultBar: {fileID: 0}
   canTarget: 1
   isStartButton: 0
+  gameIsStart: 0
 --- !u!135 &1853675494
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -6205,7 +6214,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1999558953}
-  m_LocalRotation: {x: 0, y: 0, z: -1, w: 0}
+  m_LocalRotation: {x: 0, y: 0, z: -0.9883483, w: 0.1522096}
   m_LocalPosition: {x: 2, y: 1.87, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -6218,7 +6227,7 @@ Transform:
   - {fileID: 110361881}
   m_Father: {fileID: 1359583367}
   m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -180}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -162.49}
 --- !u!212 &1999558955
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -6559,6 +6568,7 @@ MonoBehaviour:
   resultBar: {fileID: 0}
   canTarget: 1
   isStartButton: 0
+  gameIsStart: 0
 --- !u!212 &3048322399501171369
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -6627,7 +6637,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &3048322399501171383
 Transform:
   m_ObjectHideFlags: 0
@@ -6737,7 +6747,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!135 &4601585012367733822
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -6769,6 +6779,7 @@ MonoBehaviour:
   resultBar: {fileID: 0}
   canTarget: 1
   isStartButton: 0
+  gameIsStart: 0
 --- !u!1 &4798920092467121314
 GameObject:
   m_ObjectHideFlags: 0
@@ -6804,6 +6815,7 @@ MonoBehaviour:
   resultBar: {fileID: 0}
   canTarget: 1
   isStartButton: 0
+  gameIsStart: 0
 --- !u!1 &5794710578704552996
 GameObject:
   m_ObjectHideFlags: 0
@@ -6822,7 +6834,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &5794710578704552997
 Transform:
   m_ObjectHideFlags: 0

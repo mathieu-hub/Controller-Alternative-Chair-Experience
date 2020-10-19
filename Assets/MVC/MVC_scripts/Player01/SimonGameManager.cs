@@ -24,13 +24,14 @@ public class SimonGameManager : MonoBehaviour
 
     [Header("TIME")]
     public float countdown;
-    public float timeBreak = 2;
+    public float timeBreak;
     public bool timeBreaking = false;
 
     [Header("PLAYER 01")]
     public GameObject player01;
     public int pointPlayer01;
     public bool player01Win = false;
+    public bool startConfirmed = false;
 
 
     [Header("OBJECT TRIGGER")]
@@ -49,13 +50,17 @@ public class SimonGameManager : MonoBehaviour
     private MancheCompositor manche;
     void Initialisation()
     {
+        timeBreak = 2;
         displayIndex = 0;
         colorIndex = 0;
         countdown = round[roundIndex].timeToComplete;
         roundInProgress = false;
         round[roundIndex].displayIsPassed = false;
-        
-        DisplayUI();
+
+        if (startConfirmed)
+        {
+            DisplayUI();
+        }
     }
 
     private void Start()
@@ -101,6 +106,7 @@ public class SimonGameManager : MonoBehaviour
 
         if(timeBreak <= 0)
         {
+            Debug.Log("LET'S GO");
             timeBreak = 2;
             timeBreaking = false;
             scoreUI.SetActive(false);

@@ -21,12 +21,12 @@ public class ScoreUI : MonoBehaviour
     {
         if (player01)
         {
-            scoreUI.text = SimonGameManager.sgm.pointPlayer01 + " - ";
+            scoreUI.text = SimonGameManager.sgm.pointPlayer01 + " - " + P2SimonGameManager.p2sgm.pointPlayer02;
         }
 
         if (player02)
         {
-            scoreUI.text = " - " + SimonGameManager.sgm.pointPlayer01;
+            scoreUI.text = P2SimonGameManager.p2sgm.pointPlayer02 + " - " + SimonGameManager.sgm.pointPlayer01;
         }
     }
 }

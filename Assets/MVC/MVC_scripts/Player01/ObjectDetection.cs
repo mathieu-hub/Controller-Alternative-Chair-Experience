@@ -11,6 +11,9 @@ public class ObjectDetection : MonoBehaviour
     [SerializeField] private bool canTarget = true;
     [SerializeField] private bool isStartButton;
 
+    //Starting Game
+    public bool gameIsStart = false;
+
     private void Start()
     {
         resultBar = null;
@@ -25,7 +28,16 @@ public class ObjectDetection : MonoBehaviour
         else
         {
             resultBar = refuseBar;
-        }        
+        }   
+        
+        if(SimonGameManager.sgm.startConfirmed == true && P2SimonGameManager.p2sgm.startConfirmed == true)
+        {
+            if (!gameIsStart)
+            {
+                gameIsStart = true;
+                SimonGameManager.sgm.StartGame();
+            }
+        }
     }
 
     private void OnTriggerEnter(Collider other)
@@ -102,8 +114,7 @@ public class ObjectDetection : MonoBehaviour
 
             if (isStartButton)
             {
-                SimonGameManager.sgm.StartGame();
-                yield return new WaitForSeconds(0.5f);
+                SimonGameManager.sgm.startConfirmed = true;
                 gameObject.SetActive(false);
             }
         }        

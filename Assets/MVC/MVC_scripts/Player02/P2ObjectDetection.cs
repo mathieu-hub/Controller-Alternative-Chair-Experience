@@ -11,6 +11,9 @@ public class P2ObjectDetection : MonoBehaviour
     [SerializeField] private bool canTarget = true;
     [SerializeField] private bool isStartButton;
 
+    //Starting Game
+    public bool gameIsStart = false;
+
     private void Start()
     {
         resultBar = null;
@@ -25,6 +28,15 @@ public class P2ObjectDetection : MonoBehaviour
         else
         {
             resultBar = refuseBar;
+        }
+
+        if (SimonGameManager.sgm.startConfirmed == true && P2SimonGameManager.p2sgm.startConfirmed == true)
+        {
+            if (!gameIsStart)
+            {
+                gameIsStart = true;
+                P2SimonGameManager.p2sgm.StartGame();
+            }
         }
     }
 
@@ -102,8 +114,7 @@ public class P2ObjectDetection : MonoBehaviour
 
             if (isStartButton)
             {
-                P2SimonGameManager.p2sgm.StartGame();
-                yield return new WaitForSeconds(0.5f);
+                P2SimonGameManager.p2sgm.startConfirmed = true;
                 gameObject.SetActive(false);
             }
         }
