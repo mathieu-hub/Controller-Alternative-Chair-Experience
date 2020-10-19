@@ -9,4 +9,6 @@ public class PScripts : MonoBehaviour
     public SpriteRenderer sr;
 
     public Movement movement;
+
+    public Animator shieldPongBonusAnimator;
 }
