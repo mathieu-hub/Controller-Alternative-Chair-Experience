@@ -27,11 +27,7 @@ public class SimonGameManager : MonoBehaviour
 
     [Header("PLAYER 01")]
     public int pointPlayer01;
-    public GameObject player01;
-
-    [Header("PLAYER 02")]
-    public int pointPlayer02;
-    //public GameObject player02;
+    public GameObject player01;    
 
     [Header("OBJECT TRIGGER")]
     public GameObject redObject;
@@ -59,7 +55,6 @@ public class SimonGameManager : MonoBehaviour
         spawnedColor = new List<GameObject>();
 
         pointPlayer01 = 0;
-        pointPlayer02 = 0;
 
         roundIndex = 0;
 
