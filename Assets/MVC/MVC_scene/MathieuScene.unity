@@ -230,7 +230,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 22631966}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4b8fafb5e86c932478966054f2fa34fe, type: 3}
+  m_Script: {fileID: 11500000, guid: 5896bd4a5a9f95c459efa28fc86e48b2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   round:
@@ -279,7 +279,7 @@ MonoBehaviour:
     rateDisplay: 2
     displayIsPassed: 0
     colorSelection:
-    - {fileID: 1682518962}
+    - {fileID: 4601585012367733821}
     maximumIndexColor: 1
     timeToComplete: 10
   - colorDisplay:
@@ -367,18 +367,18 @@ MonoBehaviour:
   itsNotDisplayPhase: 1
   spawnedColor: []
   countdown: 0
-  timeBreak: 0
+  timeBreak: 2
   timeBreaking: 0
-  player01: {fileID: 1999558953}
-  pointPlayer01: 0
-  player01Win: 0
+  player02: {fileID: 1999558953}
+  pointPlayer02: 0
+  player02Win: 0
   redObject: {fileID: 1141185420}
   greenObject: {fileID: 1853675491}
   yellowObject: {fileID: 1551429763}
   blueObject: {fileID: 1682518962}
-  startButton: {fileID: 0}
-  scoreUI: {fileID: 1283953901}
-  roundUI: {fileID: 345157278}
+  startButton: {fileID: 446513716}
+  scoreUI: {fileID: 733370272}
+  roundUI: {fileID: 1883765115}
 --- !u!1 &95413403
 GameObject:
   m_ObjectHideFlags: 0

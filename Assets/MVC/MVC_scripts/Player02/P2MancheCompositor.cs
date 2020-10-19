@@ -3,8 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [System.Serializable]
-
-public class P2MancheCompositor : MonoBehaviour
+public class P2MancheCompositor 
 {
     [Header("Display")]
     public GameObject[] colorDisplay;
