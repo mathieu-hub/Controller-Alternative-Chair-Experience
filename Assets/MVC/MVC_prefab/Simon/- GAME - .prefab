@@ -1230,7 +1230,7 @@ GameObject:
   - component: {fileID: 6038489577666754874}
   - component: {fileID: 6038489577666754875}
   - component: {fileID: 6038489577666754877}
-  - component: {fileID: 6038489577666754876}
+  - component: {fileID: 1999558954}
   m_Layer: 0
   m_Name: PlayerSimon 02
   m_TagString: Player
@@ -1323,9 +1323,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerNumber: 2
   sr: {fileID: 6038489577666754875}
-  movement: {fileID: 0}
+  movement: {fileID: 1999558954}
   shieldPongBonusAnimator: {fileID: 0}
---- !u!114 &6038489577666754876
+--- !u!114 &1999558954
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1334,7 +1334,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 6038489577666754873}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7c1f08d5e960eac4a92dd33447e44663, type: 3}
+  m_Script: {fileID: 11500000, guid: a296fea345734dc40b1c19cbff77d687, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   pScripts: {fileID: 6038489577666754877}
@@ -7007,7 +7007,7 @@ GameObject:
   - component: {fileID: 571594955290804453}
   - component: {fileID: 3800964006394901246}
   - component: {fileID: 8844874463131451125}
-  - component: {fileID: 8844874463131451124}
+  - component: {fileID: 2986528878967185124}
   m_Layer: 0
   m_Name: PlayerSimon
   m_TagString: Player
@@ -7100,9 +7100,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerNumber: 1
   sr: {fileID: 3800964006394901246}
-  movement: {fileID: 0}
+  movement: {fileID: 2986528878967185124}
   shieldPongBonusAnimator: {fileID: 0}
---- !u!114 &8844874463131451124
+--- !u!114 &2986528878967185124
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -7111,7 +7111,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 8844874463131451123}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7c1f08d5e960eac4a92dd33447e44663, type: 3}
+  m_Script: {fileID: 11500000, guid: a296fea345734dc40b1c19cbff77d687, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   pScripts: {fileID: 8844874463131451125}

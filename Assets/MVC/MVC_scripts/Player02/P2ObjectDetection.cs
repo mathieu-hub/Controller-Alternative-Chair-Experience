@@ -28,9 +28,7 @@ public class P2ObjectDetection : MonoBehaviour
         else
         {
             resultBar = refuseBar;
-        }
-
-         
+        }         
     }
 
     private void OnTriggerEnter(Collider other)
@@ -73,7 +71,6 @@ public class P2ObjectDetection : MonoBehaviour
             yield return new WaitForSeconds(2f);
             StartCoroutine(ResultBarDisplay());
         }
-
     }
 
     IEnumerator ResultBarDisplay()
