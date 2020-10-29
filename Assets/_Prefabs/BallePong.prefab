@@ -102,8 +102,12 @@ MonoBehaviour:
   animator: {fileID: 9133840573557040111}
   lr: {fileID: 1824553171}
   playerNumberTarget: 1
+  playerTarget: {fileID: 0}
+  nonPlayerTarget: {fileID: 0}
   speedImpulse: 2
+  baseSpeedImpulse: 0
   speedAttraction: 0.3
+  baseSpeedAttraction: 0
   speedImpulseLimit: 8.5
   speedAttractionLimit: 3.5
   colorGradient1:
@@ -164,6 +168,7 @@ MonoBehaviour:
     m_Mode: 0
     m_NumColorKeys: 2
     m_NumAlphaKeys: 2
+  otherBallsAnimators: []
 --- !u!50 &2777146684823067635
 Rigidbody2D:
   serializedVersion: 4
@@ -180,7 +185,7 @@ Rigidbody2D:
   m_LinearDrag: 1
   m_AngularDrag: 0.05
   m_GravityScale: 0
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 6f02b82031d5f204dba46e7b873ad439, type: 2}
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 1
@@ -194,7 +199,7 @@ CircleCollider2D:
   m_GameObject: {fileID: 398176668273066210}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 6f02b82031d5f204dba46e7b873ad439, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0

@@ -120,7 +120,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3b0000023fd2b0a40a2ed25743a880e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  encoderValue: 0
+  encoderValue: 45
   imuReference: ER2
 --- !u!1 &404236288738258235
 GameObject:
@@ -285,13 +285,19 @@ MonoBehaviour:
   minDoubleBallCooldown: 10
   maxDoubleBallCooldown: 15
   fullShieldBonusActive: 0
-  fullShieldNumberPerRound: 0
-  fullShieldBallBonusPrefab: {fileID: 0}
-  minFullShieldBallCooldown: 0
-  maxFullShieldBallCooldown: 0
-  scoreLevelUp: 0
+  fullShieldNumberPerRound: 3
+  fullShieldBallBonusPrefab: {fileID: 4240160440388693010, guid: b683785f1e10c1a40825ef7ac7fc7f73,
+    type: 3}
+  minFullShieldBallCooldown: 5
+  maxFullShieldBallCooldown: 10
+  bricksBonusActive: 0
+  bricksBonusPrefab: {fileID: 3244890655688032132, guid: 69a8fa0636c8e334f83f69ad23b52d5c,
+    type: 3}
+  minBricksCooldown: 4
+  maxBricksCooldown: 10
+  scoreLevelUp: 7
   bonusPrefabs: []
-  levelNumb: 1
+  levelNumb: 3
 --- !u!1 &4798920091008322726
 GameObject:
   m_ObjectHideFlags: 0

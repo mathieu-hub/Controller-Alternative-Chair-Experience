@@ -148,7 +148,7 @@ BoxCollider2D:
   m_GameObject: {fileID: 165855536}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 6f02b82031d5f204dba46e7b873ad439, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
@@ -527,7 +527,7 @@ PrefabInstance:
     - target: {fileID: 3449965251692453866, guid: 1927d2374997060459bd018cf232cacb,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 2.09
+      value: 3.3
       objectReference: {fileID: 0}
     - target: {fileID: 3449965251692453866, guid: 1927d2374997060459bd018cf232cacb,
         type: 3}
@@ -677,7 +677,7 @@ PrefabInstance:
     - target: {fileID: 6062883940911956633, guid: 523bed63ff7e65d4ab5dafc3a8d30041,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -2.06
+      value: -3.3
       objectReference: {fileID: 0}
     - target: {fileID: 6062883940911956633, guid: 523bed63ff7e65d4ab5dafc3a8d30041,
         type: 3}
@@ -758,7 +758,7 @@ BoxCollider2D:
   m_GameObject: {fileID: 1776232280}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 6f02b82031d5f204dba46e7b873ad439, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
@@ -866,7 +866,7 @@ BoxCollider2D:
   m_GameObject: {fileID: 1859791741}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 6f02b82031d5f204dba46e7b873ad439, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
@@ -986,7 +986,7 @@ BoxCollider2D:
   m_GameObject: {fileID: 1980557800}
   m_Enabled: 1
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 6f02b82031d5f204dba46e7b873ad439, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
@@ -1198,32 +1198,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2275845503816020702, guid: 42446977c057bb44892adef90ca71ebe,
-        type: 3}
-      propertyPath: scoreLevelUp
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 2275845503816020702, guid: 42446977c057bb44892adef90ca71ebe,
-        type: 3}
-      propertyPath: fullShieldBallBonusPrefab
-      value: 
-      objectReference: {fileID: 4240160440388693010, guid: b683785f1e10c1a40825ef7ac7fc7f73,
-        type: 3}
-    - target: {fileID: 2275845503816020702, guid: 42446977c057bb44892adef90ca71ebe,
-        type: 3}
-      propertyPath: fullShieldNumberPerRound
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 2275845503816020702, guid: 42446977c057bb44892adef90ca71ebe,
-        type: 3}
-      propertyPath: minFullShieldBallCooldown
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 2275845503816020702, guid: 42446977c057bb44892adef90ca71ebe,
-        type: 3}
-      propertyPath: maxFullShieldBallCooldown
-      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 6408615897179923604, guid: 42446977c057bb44892adef90ca71ebe,
         type: 3}

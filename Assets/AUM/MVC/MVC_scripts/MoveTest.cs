@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Movement : MonoBehaviour
+public class MoveTest : MonoBehaviour
 {
     public PScripts pScripts;
 
@@ -20,7 +20,9 @@ public class Movement : MonoBehaviour
     {
         //transform.position = new Vector3(vuforiaPlayerRef.position.x, transform.position.y, vuforiaPlayerRef.position.z);
 
-        float rotationValue = (reRef.encoderValue % 90) * (360/90); 
+        float rotationValue = (reRef.encoderValue % 80) * (360 / 80);
+
+        gameObject.transform.rotation = Quaternion.Euler(0f, 0f, rotationValue); 
 
         float zRotation = vuforiaPlayerRef.rotation.eulerAngles.z;
 

@@ -41,6 +41,18 @@ public class PongManager : MonoBehaviour
     float fullShieldBallCooldown;
     float fullShieldBallCooldownTimer;
 
+    [Header("BricksBonus")]
+
+    public bool bricksBonusActive;
+
+    public GameObject bricksBonusPrefab;
+
+    public float minBricksCooldown;
+    public float maxBricksCooldown;
+
+    float bricksCooldown;
+    float bricksCooldownTimer;
+
     public int scoreLevelUp;
 
     [HideInInspector] public List<Animator> bonusPrefabs = new List<Animator>();
@@ -63,6 +75,25 @@ public class PongManager : MonoBehaviour
 
     private void Update()
     {
+        if(levelNumb == 1)
+        {
+            doubleBonusActive = false;
+            fullShieldBonusActive = true;
+            bricksBonusActive = false;
+        }
+        else if(levelNumb == 2)
+        {
+            doubleBonusActive = false;
+            fullShieldBonusActive = true;
+            bricksBonusActive = true;
+        }
+        else if(levelNumb == 3)
+        {
+            doubleBonusActive = true;
+            fullShieldBonusActive = true;
+            bricksBonusActive = true;
+        }
+
         if(doubleBonusActive)
             if (doubleBallCooldownTimer < doubleBallCooldown)
             {
@@ -82,6 +113,16 @@ public class PongManager : MonoBehaviour
             {
                 SpawnFullShieldBonus();
             }
+
+        if (bricksBonusActive)
+            if (bricksCooldownTimer < bricksCooldown)
+            {
+                bricksCooldownTimer += Time.deltaTime;
+            }
+            else
+            {
+                SpawnBricksBonus();
+            }
     }
 
     void SpawnDoubleBallBonus()
@@ -99,15 +140,47 @@ public class PongManager : MonoBehaviour
 
     void SpawnFullShieldBonus()
     {
-        Animator dbbp = Instantiate(doubleBallBonusPrefab).GetComponent<Animator>();
+        Animator sfsb = Instantiate(fullShieldBallBonusPrefab).GetComponent<Animator>();
 
-        dbbp.transform.position = new Vector2(Random.Range(-0.7f, 0.7f), Random.Range(-1.3f, 1.3f));
+        sfsb.transform.position = new Vector2(Random.Range(-0.7f, 0.7f), Random.Range(-1.3f, 1.3f));
 
-        bonusPrefabs.Add(dbbp);
+        bonusPrefabs.Add(sfsb);
 
-        doubleBallCooldownTimer = 0;
+        fullShieldBallCooldownTimer = 0;
 
-        doubleBallCooldown = Random.Range(minDoubleBallCooldown, maxDoubleBallCooldown);
+        fullShieldBallCooldown = Random.Range(fullShieldBallCooldown, fullShieldBallCooldown);
+    }
+
+    void SpawnBricksBonus()
+    {
+        BrickMovement bm = Instantiate(bricksBonusPrefab).GetComponent<BrickMovement>();
+
+        if(Random.Range(0, 2) == 0)
+        {
+            bm.goUp = false;
+            bm.transform.position = new Vector2(Random.Range(-1.7f, 1.7f), 3f);
+        }
+        else
+        {
+            bm.goUp = true;
+            bm.transform.position = new Vector2(Random.Range(-1.7f, 1.7f), -3f);
+        }
+
+        if (Random.Range(0, 2) == 0)
+        {
+            bm.rotateRight = true;
+        }
+        else
+        {
+            bm.rotateRight = false;
+        }
+
+        bm.movementSpeed = Random.Range(10f, 50f);
+        bm.rotationSpeed = Random.Range(10f, 50f);
+
+        bricksCooldownTimer = 0;
+
+        bricksCooldown = Random.Range(minBricksCooldown, maxBricksCooldown);
     }
 
     public void UpdateScores(int playerWinnerNumber)
