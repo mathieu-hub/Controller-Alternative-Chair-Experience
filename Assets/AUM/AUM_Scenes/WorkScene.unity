@@ -1218,6 +1218,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: BallePong
       objectReference: {fileID: 0}
+    - target: {fileID: 398176668273066210, guid: 59641f085604d7f48a279bdc436e9a64,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2657953372066968010, guid: 59641f085604d7f48a279bdc436e9a64,
         type: 3}
       propertyPath: m_LocalPosition.x
